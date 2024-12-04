@@ -166,9 +166,9 @@
         "access_token_expiration": 1800.0,
         "token": "3308241c68dc1cff967a800cc92c06aee2cf1e7d5ebd1dc4eb04d85a767b1088a3ae976660d944545553d12372faaee71b63be711732299599fe8c1863564814",
         "jwt_key": "877e43349ba97a641a57c43f656e44635abad36c4f7c2454546af9bf2972964eecd1f5081a32534eff3fe3e09b7fe0b95ea3c2b8d87efa20f12fa1d4dd4bb27a",
-        "last_used_at": "2024-11-29T09:38:14.347308+00:00",
+        "last_used_at": "2024-12-04T15:10:34.902161+00:00",
         "last_used_ip": "10.103.101.14",
-        "expire_at": 1740649094.347308,
+        "expire_at": 1741101034.902161,
         "credential_id": "1a2a5251337148238f492ca41c7830d4",
         "version": "2024.11.0"
       },
@@ -200,9 +200,9 @@
         "access_token_expiration": 1800.0,
         "token": "5d4253d305b0cfbdaf837f2e68cd10da984ab29e307b8877474989946cad1bb26b917a75057e9017664681956a9b59d532c7236264dbb826ded9bee85eef28ba",
         "jwt_key": "646064cd0a54aa80dde79255e091e5aa1b7fe1c36fad3edcfab147530d8ac66c8a891290d5a7f23b92a15f09915e9c85e26307b9d5fecd3234c8f07f656c2a23",
-        "last_used_at": "2024-12-04T07:24:36.790701+00:00",
+        "last_used_at": "2024-12-04T14:08:27.222611+00:00",
         "last_used_ip": "10.103.101.5",
-        "expire_at": 1741073076.790701,
+        "expire_at": 1741097307.222611,
         "credential_id": "1a2a5251337148238f492ca41c7830d4",
         "version": "2024.11.0"
       }

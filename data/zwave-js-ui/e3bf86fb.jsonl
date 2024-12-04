@@ -92,3 +92,4 @@
 {"k":"node.7.endpoint.0.commandClass.0x20","v":{"isSupported":false,"isControlled":false,"secure":false,"version":1}}
 {"k":"node.7.deviceConfigHash","v":"99914b932bd37a50b983c5e7c90ae93b"}
 {"k":"node.6.lastSeen","v":1733300395164}
+{"k":"node.6.lastSeen","v":1733300575161}

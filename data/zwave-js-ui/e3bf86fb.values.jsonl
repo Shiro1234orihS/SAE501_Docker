@@ -31,7 +31,7 @@
 {"k":"{\"nodeId\":6,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true,"ts":1732270676157}
 {"k":"{\"nodeId\":6,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732270676158}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline","ts":1732270676250}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":20.9,"ts":1733299795178}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.4,"ts":1733300335181}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":38,"ts":1733299795191}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"49":[5],"90":[1],"113":[5],"$$type$$":"map"},"ts":1732270676441}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":2}","v":"Temperature Report","ts":1732270676495}
@@ -57,7 +57,7 @@
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":17}","v":[0],"ts":1732270677352}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":39}","v":[1],"ts":1732270677399}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":7.2,"ts":1732874979735}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":539,"ts":1733297686445}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":1395,"ts":1733300575169}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.007,"ts":1732874979748}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732270677661}
 {"k":"{\"nodeId\":6,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportsV1Alarm\"}","v":false,"ts":1732270677734}
@@ -100,7 +100,3 @@
 {"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732611497458}
 {"k":"{\"nodeId\":7,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732611497462}
 {"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":643,"ts":1733299855178}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":1515,"ts":1733300215174}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.4,"ts":1733300335181}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":475,"ts":1733300395177}

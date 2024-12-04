@@ -2641,3 +2641,81 @@
                                     channel 1: -99 dBm
                                     channel 2: -102 dBm
 2024-12-04T08:20:17.859Z DRIVER   all queues idle
+2024-12-04T08:20:47.832Z DRIVER   one or more queues busy
+2024-12-04T08:20:47.835Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:20:47.836Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:20:47.840Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:20:47.842Z SERIAL « 0x0106013baa9c996c                                                   (8 bytes)
+2024-12-04T08:20:47.843Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:20:47.845Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -103 dBm
+2024-12-04T08:20:47.847Z DRIVER   all queues idle
+2024-12-04T08:21:17.833Z DRIVER   one or more queues busy
+2024-12-04T08:21:17.838Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:21:17.838Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:21:17.843Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:21:17.845Z SERIAL « 0x0106013ba89d9b6d                                                   (8 bytes)
+2024-12-04T08:21:17.846Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:21:17.847Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -101 dBm
+2024-12-04T08:21:17.850Z DRIVER   all queues idle
+2024-12-04T08:21:47.834Z DRIVER   one or more queues busy
+2024-12-04T08:21:47.839Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:21:47.840Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:21:47.844Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:21:47.848Z SERIAL « 0x0106013bab9d9a6f                                                   (8 bytes)
+2024-12-04T08:21:47.850Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:21:47.851Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:21:47.855Z DRIVER   all queues idle
+2024-12-04T08:22:17.836Z DRIVER   one or more queues busy
+2024-12-04T08:22:17.843Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:22:17.844Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:22:17.850Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:22:17.854Z SERIAL « 0x0106013ba7a09f5b                                                   (8 bytes)
+2024-12-04T08:22:17.857Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:22:17.861Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -96 dBm
+                                    channel 2: -97 dBm
+2024-12-04T08:22:17.869Z DRIVER   all queues idle
+2024-12-04T08:22:47.834Z DRIVER   one or more queues busy
+2024-12-04T08:22:47.837Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:22:47.837Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:22:47.842Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:22:47.843Z SERIAL « 0x0106013ba7a5a061                                                   (8 bytes)
+2024-12-04T08:22:47.844Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:22:47.846Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -91 dBm
+                                    channel 2: -96 dBm
+2024-12-04T08:22:47.849Z DRIVER   all queues idle
+2024-12-04T08:22:55.159Z SERIAL « 0x011100a800010608310511040000057300d6c8                            (19 bytes)
+2024-12-04T08:22:55.163Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:22:55.167Z CNTRLR   [Node 006] [Multilevel Sensor] Carbon dioxide (CO₂) level: metada [Endpoint 0]
+                                  ta updated
+2024-12-04T08:22:55.170Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Carbon dioxide (CO₂) level: 47 [Endpoint 0]
+                                  5 => 1395
+2024-12-04T08:22:55.173Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -42 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Carbon dioxide (CO₂) level
+                                      scale:       Parts/million
+                                      value:       1395
+2024-12-04T08:23:17.836Z DRIVER   one or more queues busy
+2024-12-04T08:23:17.840Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:23:17.841Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:23:17.845Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:23:17.847Z SERIAL « 0x0106013ba5a59e5d                                                   (8 bytes)
+2024-12-04T08:23:17.848Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:23:17.850Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -91 dBm
+                                    channel 1: -91 dBm
+                                    channel 2: -98 dBm
+2024-12-04T08:23:17.852Z DRIVER   all queues idle

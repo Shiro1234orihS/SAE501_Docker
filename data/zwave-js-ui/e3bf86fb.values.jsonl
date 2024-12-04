@@ -101,3 +101,6 @@
 {"k":"{\"nodeId\":7,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732611497462}
 {"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":643,"ts":1733299855178}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":1515,"ts":1733300215174}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.4,"ts":1733300335181}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":475,"ts":1733300395177}

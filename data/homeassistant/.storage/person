@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "sae_de_zinzin",
+        "name": "SAE de Zinzin",
+        "user_id": "51f694c4e12f4b2fbff06a78c5d286a6",
+        "device_trackers": []
+      }
+    ]
+  }
+}

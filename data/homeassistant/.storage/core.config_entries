@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 4,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {"created_at":"2024-11-08T12:05:55.462122+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"sun","entry_id":"01JC5TNBM667936W31T18Q472D","minor_version":1,"modified_at":"2024-11-08T12:05:55.462135+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"import","title":"Sun","unique_id":null,"version":1},
+      {"created_at":"2024-11-08T12:05:55.940634+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"go2rtc","entry_id":"01JC5TNC34TRFVKB5TWZR050SG","minor_version":1,"modified_at":"2024-11-08T12:05:55.940647+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"system","title":"go2rtc","unique_id":null,"version":1},
+      {"created_at":"2024-11-08T12:09:41.548571+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"shopping_list","entry_id":"01JC5TW8DCF3BDJ4C529Y50Z8K","minor_version":1,"modified_at":"2024-11-08T12:09:41.548583+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Shopping list","unique_id":"shopping_list","version":1},
+      {"created_at":"2024-11-08T12:09:41.565480+00:00","data":{"language":"en","tld":"com"},"disabled_by":null,"discovery_keys":{},"domain":"google_translate","entry_id":"01JC5TW8DXR3H3Y6D9BC60JEJX","minor_version":1,"modified_at":"2024-11-08T12:09:41.565493+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Google Translate text-to-speech","unique_id":null,"version":1},
+      {"created_at":"2024-11-08T12:09:41.609204+00:00","data":{"track_home":true},"disabled_by":null,"discovery_keys":{},"domain":"met","entry_id":"01JC5TW8F9KJXG1JETDP9QA7P4","minor_version":1,"modified_at":"2024-11-08T12:09:41.609217+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Home","unique_id":null,"version":1},
+      {"created_at":"2024-11-08T12:09:41.923288+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"radio_browser","entry_id":"01JC5TW8S38K3RC6TGMXVYGQ9Z","minor_version":1,"modified_at":"2024-11-08T12:09:41.923304+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Radio Browser","unique_id":null,"version":1},
+      {"created_at":"2024-11-22T09:59:02.482397+00:00","data":{"integration_created_addon":false,"lr_s2_access_control_key":null,"lr_s2_authenticated_key":null,"s0_legacy_key":null,"s2_access_control_key":null,"s2_authenticated_key":null,"s2_unauthenticated_key":null,"url":"ws://172.19.0.2:3000","usb_path":null,"use_addon":false},"disabled_by":null,"discovery_keys":{"zeroconf":[{"domain":"zeroconf","key":["_zwave-js-server._tcp.local.","3820979963._zwave-js-server._tcp.local."],"version":1}]},"domain":"zwave_js","entry_id":"01JD9MZ32JJZM5CRG3H07AVBY6","minor_version":1,"modified_at":"2024-11-22T09:59:02.482430+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"zeroconf","title":"Z-Wave JS","unique_id":"3820979963","version":1}
+    ]
+  }
+}

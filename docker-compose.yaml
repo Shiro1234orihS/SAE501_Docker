@@ -1,0 +1,75 @@
+version: '3.8'
+services:
+  zwave-js-ui:
+    image: zwavejs/zwave-js-ui:latest
+    container_name: zwave-js-ui
+    restart: unless-stopped
+    ports:
+      - "8091:8091" # Port pour accéder à l'interface Z-Wave JS UI
+    volumes:
+      - ./data/zwave-js-ui:/usr/src/app/store # Persist la configuration
+    environment:
+      - ZWAVEJS_EXTERNAL_CONFIG_DIR=/usr/src/app/store # Emplacement des configs
+    devices:
+      - /dev/ttyUSB0:/dev/zwave # Mappe le périphérique USB pour Z-Wave
+    networks:
+      - zwave_network # Réseau partagé pour la communication
+
+  homeassistant:
+    image: homeassistant/home-assistant:stable
+    container_name: homeassistant
+    restart: unless-stopped
+    ports:
+      - "8123:8123" # Port pour accéder à Home Assistant
+    volumes:
+      - ./data/homeassistant:/config # Persist la configuration
+    environment:
+      - TZ=Europe/Paris # Fuseau horaire
+    platform: linux/arm/v7 # Spécifie l'architecture
+    networks:
+      - zwave_network # Réseau partagé pour la communication
+
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    restart: unless-stopped
+    ports:
+      - "8086:8086" # Port pour accéder à InfluxDB
+    environment:
+      - INFLUXDB_DB=home_assistant
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=123456789
+    volumes:
+      - ./data/influxdb:/var/lib/influxdb2
+    networks:
+      - zwave_network # Réseau partagé pour la communication
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # Port pour accéder à Grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=123456789
+    volumes:
+      - ./data/grafana:/var/lib/grafana # Persist la configuration
+    networks:
+      - zwave_network # Réseau partagé pour la communication
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    ports:
+      - "9000:9000" # Port pour accéder à Portainer
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data/portainer:/data # Persist la configuration
+    networks:
+      - zwave_network # Réseau partagé pour la communication
+
+networks:
+  zwave_network:
+    driver: bridge

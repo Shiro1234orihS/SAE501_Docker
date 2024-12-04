@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/usr/src/app/store/logs/zwavejs_logrotate.json",
+    "files": [
+        {
+            "date": 1732864239236,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-11-29.log",
+            "hash": "600176b1da2243756cfb325ef38cd4e38c49d92df96d51f71d4f8dca9d458b44"
+        },
+        {
+            "date": 1733296188548,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-12-04.log",
+            "hash": "0b477b0032cd82d87c689e0f07198c42a9868e5a7113a49dc4b410c6686b838c"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,2499 @@
+2024-12-04T07:09:48.573Z DRIVER   ███████╗        ██╗    ██╗  █████╗  ██╗   ██╗ ███████╗          ██╗ ███████╗
+                                  ╚══███╔╝        ██║    ██║ ██╔══██╗ ██║   ██║ ██╔════╝          ██║ ██╔════╝
+                                    ███╔╝  █████╗ ██║ █╗ ██║ ███████║ ██║   ██║ █████╗            ██║ ███████╗
+                                   ███╔╝   ╚════╝ ██║███╗██║ ██╔══██║ ╚██╗ ██╔╝ ██╔══╝       ██   ██║ ╚════██║
+                                  ███████╗        ╚███╔███╔╝ ██║  ██║  ╚████╔╝  ███████╗     ╚█████╔╝ ███████║
+                                  ╚══════╝         ╚══╝╚══╝  ╚═╝  ╚═╝   ╚═══╝   ╚══════╝      ╚════╝  ╚══════╝
+2024-12-04T07:09:48.579Z DRIVER   version 13.10.3
+2024-12-04T07:09:48.582Z DRIVER   
+2024-12-04T07:09:48.584Z DRIVER   starting driver...
+2024-12-04T07:09:48.585Z DRIVER   opening serial port /dev/zwave
+2024-12-04T07:09:48.610Z DRIVER   serial port opened
+2024-12-04T07:09:48.615Z SERIAL » 0x15                                                                 (1 bytes)
+2024-12-04T07:09:49.628Z DRIVER   loading configuration...
+2024-12-04T07:09:49.654Z CONFIG   Using external configuration dir /usr/src/app/store/.config-db
+2024-12-04T07:09:49.655Z CONFIG   version 13.10.3
+2024-12-04T07:09:51.564Z DRIVER   beginning interview...
+2024-12-04T07:09:51.570Z DRIVER   added request handler for AddNodeToNetwork (0x4a)...
+                                  1 registered
+2024-12-04T07:09:51.574Z DRIVER   added request handler for RemoveNodeFromNetwork (0x4b)...
+                                  1 registered
+2024-12-04T07:09:51.575Z DRIVER   added request handler for ReplaceFailedNode (0x63)...
+                                  1 registered
+2024-12-04T07:09:51.576Z DRIVER   added request handler for SetLearnMode (0x50)...
+                                  1 registered
+2024-12-04T07:09:51.579Z CNTRLR   querying Serial API capabilities...
+2024-12-04T07:09:52.007Z SERIAL » 0x01030007fb                                                         (5 bytes)
+2024-12-04T07:09:52.011Z DRIVER » [REQ] [GetSerialApiCapabilities]
+2024-12-04T07:09:52.026Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.032Z SERIAL « 0x012b0107070b000000040004f6873e88cf2bc04ffbd7fde00700008000808680b (45 bytes)
+                                  a05007000002e0000000000a3
+2024-12-04T07:09:52.036Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.039Z DRIVER « [RES] [GetSerialApiCapabilities]
+                                    payload: 0x070b000000040004f6873e88cf2bc04ffbd7fde00700008000808680ba0500700
+                                  0002e0000000000
+2024-12-04T07:09:52.052Z CNTRLR   received API capabilities:
+                                    firmware version:    7.11
+                                    manufacturer ID:     0x00
+                                    product type:        0x04
+                                    product ID:          0x04
+                                    supported functions: 
+                                    · GetSerialApiInitData (0x02)
+                                    · SetApplicationNodeInformation (0x03)
+                                    · GetControllerCapabilities (0x05)
+                                    · SetSerialApiTimeouts (0x06)
+                                    · GetSerialApiCapabilities (0x07)
+                                    · SoftReset (0x08)
+                                    · GetProtocolVersion (0x09)
+                                    · SerialAPIStarted (0x0a)
+                                    · SerialAPISetup (0x0b)
+                                    · SetRFReceiveMode (0x10)
+                                    · SendNodeInformation (0x12)
+                                    · SendData (0x13)
+                                    · SendDataMulticast (0x14)
+                                    · GetControllerVersion (0x15)
+                                    · SendDataAbort (0x16)
+                                    · FUNC_ID_ZW_GET_RANDOM (0x1c)
+                                    · GetControllerId (0x20)
+                                    · UNKNOWN_FUNC_MEMORY_GET_BYTE (0x21)
+                                    · UNKNOWN_FUNC_MEMORY_PUT_BYTE (0x22)
+                                    · UNKNOWN_FUNC_MEMORY_GET_BUFFER (0x23)
+                                    · UNKNOWN_FUNC_MEMORY_PUT_BUFFER (0x24)
+                                    · EnterBootloader (0x27)
+                                    · UNKNOWN_FUNC_UNKNOWN_0x28 (0x28)
+                                    · GetNVMId (0x29)
+                                    · ExtNVMReadLongBuffer (0x2a)
+                                    · ExtNVMReadLongByte (0x2c)
+                                    · NVMOperations (0x2e)
+                                    · ClearTxTimers (0x37)
+                                    · GetTxTimers (0x38)
+                                    · ClearNetworkStats (0x39)
+                                    · GetNetworkStats (0x3a)
+                                    · GetBackgroundRSSI (0x3b)
+                                    · SetListenBeforeTalkThreshold (0x3c)
+                                    · RemoveSpecificNodeIdFromNetwork (0x3f)
+                                    · GetNodeProtocolInfo (0x41)
+                                    · HardReset (0x42)
+                                    · FUNC_ID_ZW_REPLICATION_COMMAND_COMPLETE (0x44)
+                                    · FUNC_ID_ZW_REPLICATION_SEND_DATA (0x45)
+                                    · AssignReturnRoute (0x46)
+                                    · DeleteReturnRoute (0x47)
+                                    · RequestNodeNeighborUpdate (0x48)
+                                    · ApplicationUpdateRequest (0x49)
+                                    · AddNodeToNetwork (0x4a)
+                                    · RemoveNodeFromNetwork (0x4b)
+                                    · AddPrimaryController (0x4d)
+                                    · AssignPriorityReturnRoute (0x4f)
+                                    · SetLearnMode (0x50)
+                                    · AssignSUCReturnRoute (0x51)
+                                    · RequestNetworkUpdate (0x53)
+                                    · SetSUCNodeId (0x54)
+                                    · DeleteSUCReturnRoute (0x55)
+                                    · GetSUCNodeId (0x56)
+                                    · SendSUCNodeId (0x57)
+                                    · AssignPrioritySUCReturnRoute (0x58)
+                                    · ExploreRequestInclusion (0x5e)
+                                    · ExploreRequestExclusion (0x5f)
+                                    · RequestNodeInfo (0x60)
+                                    · RemoveFailedNode (0x61)
+                                    · IsFailedNode (0x62)
+                                    · ReplaceFailedNode (0x63)
+                                    · GetRoutingInfo (0x80)
+                                    · LockUnlockLastRoute (0x90)
+                                    · GetPriorityRoute (0x92)
+                                    · SetPriorityRoute (0x93)
+                                    · UNKNOWN_FUNC_UNKNOWN_0x98 (0x98)
+                                    · VirtualNodeSetNodeInfo (0xa0)
+                                    · VirtualNodeSendNodeInfo (0xa2)
+                                    · VirtualNodeSetLearnMode (0xa4)
+                                    · GetVirtualNodes (0xa5)
+                                    · IsVirtualNode (0xa6)
+                                    · BridgeApplicationCommand (0xa8)
+                                    · SendDataBridge (0xa9)
+                                    · SendDataMulticastBridge (0xab)
+                                    · GetLibrary (0xbd)
+                                    · SendTestFrame (0xbe)
+                                    · GetProtocolStatus (0xbf)
+                                    · StartWatchdog (0xd2)
+                                    · StopWatchdog (0xd3)
+                                    · SetMaximumRoutingAttempts (0xd4)
+                                    · SetMaxSmartStartInclusionRequestInterval (0xd6)
+2024-12-04T07:09:52.055Z CNTRLR   querying additional controller information...
+2024-12-04T07:09:52.068Z SERIAL » 0x01030002fe                                                         (5 bytes)
+2024-12-04T07:09:52.070Z DRIVER » [REQ] [GetSerialApiInitData]
+2024-12-04T07:09:52.076Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.106Z SERIAL « 0x0125010208081d6d0000000000000000000000000000000000000000000000000 (39 bytes)
+                                  00000000700ae
+2024-12-04T07:09:52.109Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.112Z DRIVER « [RES] [GetSerialApiInitData]
+                                    payload: 0x08081d6d000000000000000000000000000000000000000000000000000000000
+                                  700
+2024-12-04T07:09:52.117Z CNTRLR   received additional controller information:
+                                    Z-Wave API version:         8 (legacy)
+                                    Z-Wave chip type:           EFR32ZG14 / ZGM130S
+                                    node type                   Controller
+                                    controller role:            primary
+                                    controller is the SIS:      true
+                                    controller supports timers: false
+                                    Z-Wave Classic nodes:       1, 3, 4, 6, 7
+2024-12-04T07:09:52.118Z CNTRLR   querying version info...
+2024-12-04T07:09:52.126Z SERIAL » 0x01030015e9                                                         (5 bytes)
+2024-12-04T07:09:52.127Z DRIVER » [REQ] [GetControllerVersion]
+2024-12-04T07:09:52.134Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.137Z SERIAL « 0x011001155a2d5761766520372e3131000797                              (18 bytes)
+2024-12-04T07:09:52.140Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.142Z DRIVER « [RES] [GetControllerVersion]
+                                    payload: 0x5a2d5761766520372e31310007
+2024-12-04T07:09:52.147Z CNTRLR   received version info:
+                                    controller type: Bridge Controller
+                                    library version: Z-Wave 7.11
+2024-12-04T07:09:52.148Z CNTRLR   querying protocol version info...
+2024-12-04T07:09:52.154Z SERIAL » 0x01030009f5                                                         (5 bytes)
+2024-12-04T07:09:52.156Z DRIVER » [REQ] [GetProtocolVersion]
+2024-12-04T07:09:52.162Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.165Z SERIAL « 0x0119010900070b0000af303132333435363738394142434445464b            (27 bytes)
+2024-12-04T07:09:52.167Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.169Z DRIVER « [RES] [GetProtocolVersion]
+                                    payload: 0x00070b0000af30313233343536373839414243444546
+2024-12-04T07:09:52.172Z CNTRLR   received protocol version info:
+                                    protocol type:             Z-Wave
+                                    protocol version:          7.11.0
+                                    appl. framework build no.: 175
+                                    git commit hash:           30313233343536373839414243444546
+2024-12-04T07:09:52.175Z CNTRLR   querying controller capabilities...
+2024-12-04T07:09:52.181Z SERIAL » 0x01030005f9                                                         (5 bytes)
+2024-12-04T07:09:52.183Z DRIVER » [REQ] [GetControllerCapabilities]
+2024-12-04T07:09:52.188Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.190Z SERIAL « 0x010401051ce3                                                       (6 bytes)
+2024-12-04T07:09:52.192Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.195Z DRIVER « [RES] [GetControllerCapabilities]
+                                    payload: 0x1c
+2024-12-04T07:09:52.201Z CNTRLR   received controller capabilities:
+                                    controller role:      Primary
+                                    is the SUC:           true
+                                    started this network: true
+                                    SIS is present:       true
+                                    was real primary:     true
+2024-12-04T07:09:52.202Z CNTRLR   querying serial API setup capabilities...
+2024-12-04T07:09:52.207Z SERIAL » 0x0104000b01f1                                                       (6 bytes)
+2024-12-04T07:09:52.210Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetSupportedCommands
+                                    payload: 0x01
+2024-12-04T07:09:52.214Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.215Z SERIAL « 0x0105010b016e9f                                                     (7 bytes)
+2024-12-04T07:09:52.218Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.221Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetSupportedCommands
+                                    payload: 0x6e
+2024-12-04T07:09:52.226Z CNTRLR   supported serial API setup commands:
+                                  · GetSupportedCommands
+                                  · SetTxStatusReport
+                                  · SetPowerlevel
+                                  · GetPowerlevel
+                                  · GetRFRegion
+                                  · SetRFRegion
+2024-12-04T07:09:52.228Z CNTRLR   supported Z-Wave features: 
+                                    · SmartStart
+2024-12-04T07:09:52.231Z CNTRLR   Querying configured RF region...
+2024-12-04T07:09:52.237Z SERIAL » 0x0104000b20d0                                                       (6 bytes)
+2024-12-04T07:09:52.240Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    payload: 0x20
+2024-12-04T07:09:52.245Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.247Z SERIAL « 0x0105010b2000d0                                                     (7 bytes)
+2024-12-04T07:09:52.249Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.252Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    region:  Europe
+2024-12-04T07:09:52.255Z CNTRLR   The controller is using RF region Europe
+2024-12-04T07:09:52.257Z CNTRLR   Performing soft reset...
+2024-12-04T07:09:52.264Z SERIAL » 0x01030008f4                                                         (5 bytes)
+2024-12-04T07:09:52.265Z DRIVER » [REQ] [SoftReset]
+2024-12-04T07:09:52.269Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:52.273Z CNTRLR   Waiting for the controller to reconnect...
+2024-12-04T07:09:52.276Z DRIVER   all queues idle
+2024-12-04T07:09:53.435Z SERIAL « 0x0115000a03000102010c5e22855970565a7273989f86b1                    (23 bytes)
+2024-12-04T07:09:53.438Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.441Z DRIVER « [REQ] [SerialAPIStarted]
+                                    wake up reason:        WatchdogReset
+                                    watchdog enabled:      false
+                                    generic device class:  0x02
+                                    specific device class: 0x01
+                                    always listening:      false
+                                    supports Long Range:   false
+2024-12-04T07:09:53.443Z CNTRLR   reconnected and restarted
+2024-12-04T07:09:53.445Z CNTRLR   Starting hardware watchdog...
+2024-12-04T07:09:53.448Z DRIVER   one or more queues busy
+2024-12-04T07:09:53.449Z CNTRLR   querying controller IDs...
+2024-12-04T07:09:53.456Z SERIAL » 0x010300d22e                                                         (5 bytes)
+2024-12-04T07:09:53.458Z DRIVER » [REQ] [StartWatchdog]
+2024-12-04T07:09:53.465Z SERIAL » 0x01030020dc                                                         (5 bytes)
+2024-12-04T07:09:53.467Z DRIVER » [REQ] [GetControllerId]
+2024-12-04T07:09:53.472Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.473Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.475Z SERIAL « 0x01080120e3bf86fb01f6                                              (10 bytes)
+2024-12-04T07:09:53.478Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.480Z DRIVER « [RES] [GetControllerId]
+                                    home ID:     0xe3bf86fb
+                                    own node ID: 1
+2024-12-04T07:09:53.484Z CNTRLR   received controller IDs:
+                                    home ID:     0xe3bf86fb
+                                    own node ID: 1
+2024-12-04T07:09:53.486Z CNTRLR   Enabling TX status report...
+2024-12-04T07:09:53.492Z SERIAL » 0x0105000b02ff0c                                                     (7 bytes)
+2024-12-04T07:09:53.493Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: SetTxStatusReport
+                                    enabled: true
+2024-12-04T07:09:53.524Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.526Z SERIAL « 0x0105010b0201f3                                                     (7 bytes)
+2024-12-04T07:09:53.528Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.530Z DRIVER « [RES] [SerialAPISetup]
+                                    command: SetTxStatusReport
+                                    success: true
+2024-12-04T07:09:53.534Z CNTRLR   Enabling TX status report successful...
+2024-12-04T07:09:53.534Z CNTRLR   finding SUC...
+2024-12-04T07:09:53.540Z SERIAL » 0x01030056aa                                                         (5 bytes)
+2024-12-04T07:09:53.541Z DRIVER » [REQ] [GetSUCNodeId]
+2024-12-04T07:09:53.545Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.547Z SERIAL « 0x0104015601ad                                                       (6 bytes)
+2024-12-04T07:09:53.549Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:53.551Z DRIVER « [RES] [GetSUCNodeId]
+                                    payload: 0x01
+2024-12-04T07:09:53.554Z CNTRLR   This is the SUC
+2024-12-04T07:09:53.559Z DRIVER   all queues idle
+2024-12-04T07:09:53.637Z DRIVER   Cache file for homeId 0xe3bf86fb found, attempting to restore the network from
+                                   cache...
+2024-12-04T07:09:53.726Z CNTRLR   [Node 001] Embedded device config loaded
+2024-12-04T07:09:53.749Z CNTRLR   [Node 006] Embedded device config loaded
+2024-12-04T07:09:53.756Z CNTRLR   [Node 007] Embedded device config loaded
+2024-12-04T07:09:53.760Z DRIVER   Restoring the network from cache was successful!
+2024-12-04T07:09:53.767Z CNTRLR   [Node 001] [Manufacturer Specific] manufacturerId: metadata updated
+2024-12-04T07:09:53.769Z CNTRLR   [Node 001] [Manufacturer Specific] productType: metadata updated
+2024-12-04T07:09:53.771Z CNTRLR   [Node 001] [Manufacturer Specific] productId: metadata updated
+2024-12-04T07:09:53.774Z CNTRLR   [Node 001] [~] [Manufacturer Specific] manufacturerId: 0 => 0
+2024-12-04T07:09:53.777Z CNTRLR   [Node 001] [~] [Manufacturer Specific] productType: 4 => 4
+2024-12-04T07:09:53.778Z CNTRLR   [Node 001] [~] [Manufacturer Specific] productId: 4 => 4
+2024-12-04T07:09:53.780Z CNTRLR   [Node 001] [Version] firmwareVersions: metadata updated
+2024-12-04T07:09:53.783Z CNTRLR   [Node 001] [~] [Version] firmwareVersions: 7.11 => 7.11
+2024-12-04T07:09:53.785Z CNTRLR   [Node 001] [Version] zWaveProtocolVersion: metadata updated
+2024-12-04T07:09:53.786Z CNTRLR   [Node 001] [~] [Version] zWaveProtocolVersion: "7.11.0" => "7.11.0"
+2024-12-04T07:09:53.788Z CNTRLR   [Node 001] [Version] sdkVersion: metadata updated
+2024-12-04T07:09:53.790Z CNTRLR   [Node 001] [~] [Version] sdkVersion: "7.11.0" => "7.11.0"
+2024-12-04T07:09:53.790Z CNTRLR   Interview completed
+2024-12-04T07:09:53.792Z DRIVER   Network key for S0 configured, enabling S0 security manager...
+2024-12-04T07:09:53.796Z DRIVER   At least one network key for S2 configured, enabling S2 security manager...
+2024-12-04T07:09:53.810Z DRIVER   At least one network key for Z-Wave Long Range configured, enabling security m
+                                  anager...
+2024-12-04T07:09:53.814Z DRIVER   driver ready
+2024-12-04T07:09:53.820Z DRIVER   Checking for configuration updates...
+2024-12-04T07:09:53.942Z CNTRLR   [Node 001] The node is alive.
+2024-12-04T07:09:54.085Z CNTRLR   [Node 001] The node is ready to be used
+2024-12-04T07:09:54.087Z CNTRLR   Interviewing nodes and/or determining their status: 6, 7, 3, 4
+2024-12-04T07:09:54.088Z CNTRLR » [Node 006] pinging the node...
+2024-12-04T07:09:54.100Z CNTRLR » [Node 007] pinging the node...
+2024-12-04T07:09:54.106Z CNTRLR   [Node 003] Beginning interview - last completed stage: ProtocolInfo
+2024-12-04T07:09:54.107Z CNTRLR » [Node 003] pinging the node...
+2024-12-04T07:09:54.111Z CNTRLR   [Node 004] Beginning interview - last completed stage: ProtocolInfo
+2024-12-04T07:09:54.112Z CNTRLR » [Node 004] pinging the node...
+2024-12-04T07:09:54.117Z DRIVER   one or more queues busy
+2024-12-04T07:09:54.120Z SERIAL » 0x0104000b08f8                                                       (6 bytes)
+2024-12-04T07:09:54.121Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetPowerlevel
+                                    payload: 0x08
+2024-12-04T07:09:54.209Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.211Z SERIAL « 0x0106010b08630098                                                   (8 bytes)
+2024-12-04T07:09:54.214Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.217Z DRIVER « [RES] [SerialAPISetup]
+                                    command:               GetPowerlevel
+                                    normal powerlevel:     9.9 dBm
+                                    output power at 0 dBm: 0.0 dBm
+2024-12-04T07:09:54.224Z SERIAL » 0x0104000b20d0                                                       (6 bytes)
+2024-12-04T07:09:54.226Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    payload: 0x20
+2024-12-04T07:09:54.245Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.247Z SERIAL « 0x0105010b2000d0                                                     (7 bytes)
+2024-12-04T07:09:54.248Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.253Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    region:  Europe
+2024-12-04T07:09:54.264Z SERIAL » 0x010d00a90106010025000000000179                                    (15 bytes)
+2024-12-04T07:09:54.266Z DRIVER » [Node 006] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      1
+                                  └─[NoOperationCC]
+2024-12-04T07:09:54.429Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.431Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:09:54.433Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:54.439Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:09:55.194Z DRIVER   No configuration update available...
+2024-12-04T07:09:55.554Z SERIAL « 0x011200a8000106097105000000ff0d000000d518                          (20 bytes)
+2024-12-04T07:09:55.565Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:55.574Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T07:09:55.583Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T07:09:55.589Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -43 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   13
+                                      notification status: 255
+                                      notification state:  idle
+2024-12-04T07:09:57.192Z SERIAL « 0x011800a90100012100d87f7f7f7f0000060000000003100000a2              (26 bytes)
+2024-12-04T07:09:57.196Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:57.199Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            1
+                                    transmit status:        OK, took 2890 ms
+                                    routing attempts:       16
+                                    protocol & route speed: Z-Wave, 100 kbit/s
+                                    routing scheme:         Resort to Direct
+                                    ACK RSSI:               -40 dBm
+                                    ACK channel no.:        0
+                                    TX channel no.:         0
+2024-12-04T07:09:57.207Z CNTRLR   [Node 006] The node is alive.
+2024-12-04T07:09:57.264Z CNTRLR   Retrieving priority route to node 6...
+2024-12-04T07:09:57.268Z CNTRLR   [Node 006] The node is ready to be used
+2024-12-04T07:09:57.270Z CNTRLR « [Node 006] ping successful
+2024-12-04T07:09:57.274Z SERIAL » 0x010d00a9010701002500000000027b                                    (15 bytes)
+2024-12-04T07:09:57.275Z DRIVER » [Node 007] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      2
+                                  └─[NoOperationCC]
+2024-12-04T07:09:57.283Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:09:57.285Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:09:57.286Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:09:57.288Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:10:02.038Z SERIAL « 0x011800a9020101d7007f7f7f7f7f01010700000000020c0607ec              (26 bytes)
+2024-12-04T07:10:02.040Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:02.042Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            2
+                                    transmit status:        NoAck, took 4710 ms
+                                    routing attempts:       12
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+                                    route failed here:      6 -> 7
+2024-12-04T07:10:02.046Z CNTRLR   [Node 007] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:10:02.051Z CNTRLR   [Node 007] The node is dead.
+2024-12-04T07:10:02.054Z CNTRLR   [Node 007] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:10:02.057Z SERIAL » 0x010d00a9010301002500000000037e                                    (15 bytes)
+2024-12-04T07:10:02.058Z DRIVER » [Node 003] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      3
+                                  └─[NoOperationCC]
+2024-12-04T07:10:02.062Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:10:02.065Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:10:02.066Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:02.067Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:10:10.135Z SERIAL « 0x011800a903010321007f7f7f7f7f01010700000000020d000019              (26 bytes)
+2024-12-04T07:10:10.138Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:10.140Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            3
+                                    transmit status:        NoAck, took 8010 ms
+                                    routing attempts:       13
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+2024-12-04T07:10:10.143Z CNTRLR   [Node 003] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:10:10.147Z CNTRLR   [Node 003] The node is dead.
+2024-12-04T07:10:10.150Z CNTRLR   [Node 003] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:10:10.151Z CNTRLR   [Node 003] Interview attempt (1/5) failed, node is dead.
+2024-12-04T07:10:10.158Z SERIAL » 0x010d00a9010401002500000000047e                                    (15 bytes)
+2024-12-04T07:10:10.159Z DRIVER » [Node 004] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      4
+                                  └─[NoOperationCC]
+2024-12-04T07:10:10.170Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:10:10.172Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:10:10.173Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:10.175Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:10:18.520Z SERIAL « 0x011800a90401033d007f7f7f7f7f01010700000000020d000002              (26 bytes)
+2024-12-04T07:10:18.524Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:18.528Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            4
+                                    transmit status:        NoAck, took 8290 ms
+                                    routing attempts:       13
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+2024-12-04T07:10:18.533Z CNTRLR   [Node 004] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:10:18.537Z CNTRLR   [Node 004] The node is dead.
+2024-12-04T07:10:18.538Z CNTRLR   All nodes are ready to be used
+2024-12-04T07:10:18.553Z CNTRLR   [Node 004] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:10:18.554Z CNTRLR   [Node 004] Interview attempt (1/5) failed, node is dead.
+2024-12-04T07:10:18.565Z SERIAL » 0x01040092066f                                                       (6 bytes)
+2024-12-04T07:10:18.567Z DRIVER » [REQ] [GetPriorityRoute]
+                                    node ID: 6
+2024-12-04T07:10:18.595Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:10:18.599Z SERIAL « 0x010a01920601000000000362                                          (12 bytes)
+2024-12-04T07:10:18.602Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:18.606Z DRIVER « [RES] [GetPriorityRoute]
+                                    node ID:     6
+                                    route kind:  LWR
+                                    repeaters:   none
+                                    route speed: 100k
+2024-12-04T07:10:18.616Z DRIVER   all queues idle
+2024-12-04T07:10:18.996Z DRIVER   Usage statistics sent - next transmission scheduled in 23 hours.
+2024-12-04T07:10:23.621Z DRIVER   one or more queues busy
+2024-12-04T07:10:23.625Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:10:23.626Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:10:23.631Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:10:23.635Z SERIAL « 0x0106013b8b8b9655                                                   (8 bytes)
+2024-12-04T07:10:23.639Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:23.643Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -117 dBm
+                                    channel 1: -117 dBm
+                                    channel 2: -106 dBm
+2024-12-04T07:10:23.653Z DRIVER   all queues idle
+2024-12-04T07:10:53.624Z DRIVER   one or more queues busy
+2024-12-04T07:10:53.630Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:10:53.631Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:10:53.637Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:10:53.639Z SERIAL « 0x0106013b938f954a                                                   (8 bytes)
+2024-12-04T07:10:53.642Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:53.644Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -109 dBm
+                                    channel 1: -113 dBm
+                                    channel 2: -107 dBm
+2024-12-04T07:10:53.648Z DRIVER   all queues idle
+2024-12-04T07:10:55.582Z SERIAL « 0x010f00a8000106063105012200c100e06f                                (17 bytes)
+2024-12-04T07:10:55.588Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:55.596Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:10:55.600Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 25.1 => 19.3  [Endpoint 0]
+2024-12-04T07:10:55.604Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -32 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       19.3
+2024-12-04T07:10:55.609Z SERIAL « 0x010f00a80001060631050502002700e0ad                                (17 bytes)
+2024-12-04T07:10:55.611Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:55.616Z CNTRLR   [Node 006] [Multilevel Sensor] Humidity: metadata updated         [Endpoint 0]
+2024-12-04T07:10:55.619Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Humidity: 32 => 39             [Endpoint 0]
+2024-12-04T07:10:55.622Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -32 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Humidity
+                                      scale:       Percentage value
+                                      value:       39
+2024-12-04T07:10:55.625Z SERIAL « 0x011300a80001060a7105000000ff0d06010100e029                        (21 bytes)
+2024-12-04T07:10:55.627Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:10:55.629Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T07:10:55.632Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T07:10:55.636Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -32 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   Home Health
+                                      notification status: 255
+                                      notification state:  Volatile Organic Compound level
+                                      state parameters:    Clean
+2024-12-04T07:10:55.639Z CNTRLR   [Node 006] [~] [Notification] Home Health[VOC level status]: 2 => [Endpoint 0]
+                                   1
+2024-12-04T07:11:23.626Z DRIVER   one or more queues busy
+2024-12-04T07:11:23.639Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:11:23.641Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:11:23.647Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:11:23.651Z SERIAL « 0x0106013b9cacb142                                                   (8 bytes)
+2024-12-04T07:11:23.654Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:11:23.658Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -79 dBm
+2024-12-04T07:11:23.673Z DRIVER   all queues idle
+2024-12-04T07:11:53.624Z DRIVER   one or more queues busy
+2024-12-04T07:11:53.631Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:11:53.633Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:11:53.645Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:11:53.649Z SERIAL « 0x0106013ba4a09e59                                                   (8 bytes)
+2024-12-04T07:11:53.653Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:11:53.658Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -96 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:11:53.665Z DRIVER   all queues idle
+2024-12-04T07:12:23.626Z DRIVER   one or more queues busy
+2024-12-04T07:12:23.633Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:12:23.636Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:12:23.642Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:12:23.646Z SERIAL « 0x0106013ba59d9b60                                                   (8 bytes)
+2024-12-04T07:12:23.650Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:12:23.654Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -91 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:12:23.661Z DRIVER   all queues idle
+2024-12-04T07:12:53.624Z DRIVER   one or more queues busy
+2024-12-04T07:12:53.627Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:12:53.628Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:12:53.633Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:12:53.635Z SERIAL « 0x0106013ba59d9b60                                                   (8 bytes)
+2024-12-04T07:12:53.636Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:12:53.638Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -91 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:12:53.644Z DRIVER   all queues idle
+2024-12-04T07:13:23.627Z DRIVER   one or more queues busy
+2024-12-04T07:13:23.635Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:13:23.643Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:13:23.648Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:13:23.651Z SERIAL « 0x0106013ba0a29a5b                                                   (8 bytes)
+2024-12-04T07:13:23.653Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:13:23.656Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -96 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:13:23.661Z DRIVER   all queues idle
+2024-12-04T07:13:53.628Z DRIVER   one or more queues busy
+2024-12-04T07:13:53.643Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:13:53.646Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:13:53.651Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:13:53.656Z SERIAL « 0x0106013ba1a29f5f                                                   (8 bytes)
+2024-12-04T07:13:53.659Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:13:53.663Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -95 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -97 dBm
+2024-12-04T07:13:53.671Z DRIVER   all queues idle
+2024-12-04T07:14:23.627Z DRIVER   one or more queues busy
+2024-12-04T07:14:23.631Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:14:23.632Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:14:23.637Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:14:23.639Z SERIAL « 0x0106013b9fa29d63                                                   (8 bytes)
+2024-12-04T07:14:23.640Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:14:23.642Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -97 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:14:23.648Z DRIVER   all queues idle
+2024-12-04T07:14:53.628Z DRIVER   one or more queues busy
+2024-12-04T07:14:53.631Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:14:53.632Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:14:53.637Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:14:53.642Z SERIAL « 0x0106013ba0a59e58                                                   (8 bytes)
+2024-12-04T07:14:53.643Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:14:53.645Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -96 dBm
+                                    channel 1: -91 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:14:53.648Z DRIVER   all queues idle
+2024-12-04T07:15:23.629Z DRIVER   one or more queues busy
+2024-12-04T07:15:23.634Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:15:23.636Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:15:23.640Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:15:23.643Z SERIAL « 0x0106013baba1a36a                                                   (8 bytes)
+2024-12-04T07:15:23.647Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:15:23.649Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -93 dBm
+2024-12-04T07:15:23.659Z DRIVER   all queues idle
+2024-12-04T07:15:53.628Z DRIVER   one or more queues busy
+2024-12-04T07:15:53.634Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:15:53.636Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:15:53.640Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:15:53.642Z SERIAL « 0x0106013ba8a19d57                                                   (8 bytes)
+2024-12-04T07:15:53.643Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:15:53.645Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:15:53.650Z DRIVER   all queues idle
+2024-12-04T07:15:55.581Z SERIAL « 0x010f00a8000106063105012200c600e068                                (17 bytes)
+2024-12-04T07:15:55.587Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:15:55.594Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:15:55.599Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 19.3 => 19.8  [Endpoint 0]
+2024-12-04T07:15:55.612Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -32 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       19.8
+2024-12-04T07:16:23.629Z DRIVER   one or more queues busy
+2024-12-04T07:16:23.633Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:16:23.634Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:16:23.638Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:16:23.641Z SERIAL « 0x0106013ba49d9a60                                                   (8 bytes)
+2024-12-04T07:16:23.643Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:16:23.646Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:16:23.659Z DRIVER   all queues idle
+2024-12-04T07:16:53.631Z DRIVER   one or more queues busy
+2024-12-04T07:16:53.644Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:16:53.647Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:16:53.652Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:16:53.656Z SERIAL « 0x0106013ba09d9a64                                                   (8 bytes)
+2024-12-04T07:16:53.659Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:16:53.663Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -96 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:16:53.670Z DRIVER   all queues idle
+2024-12-04T07:17:23.631Z DRIVER   one or more queues busy
+2024-12-04T07:17:23.637Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:17:23.638Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:17:23.643Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:17:23.645Z SERIAL « 0x0106013b9e9d9a5a                                                   (8 bytes)
+2024-12-04T07:17:23.647Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:17:23.649Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:17:23.653Z DRIVER   all queues idle
+2024-12-04T07:17:53.629Z DRIVER   one or more queues busy
+2024-12-04T07:17:53.632Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:17:53.633Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:17:53.638Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:17:53.639Z SERIAL « 0x0106013ba7a5a061                                                   (8 bytes)
+2024-12-04T07:17:53.640Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:17:53.642Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -91 dBm
+                                    channel 2: -96 dBm
+2024-12-04T07:17:53.648Z DRIVER   all queues idle
+2024-12-04T07:17:55.411Z DRIVER   destroying driver instance...
+2024-12-04T07:17:55.468Z DRIVER   driver instance destroyed
+2024-12-04T07:18:19.318Z DRIVER   ███████╗        ██╗    ██╗  █████╗  ██╗   ██╗ ███████╗          ██╗ ███████╗
+                                  ╚══███╔╝        ██║    ██║ ██╔══██╗ ██║   ██║ ██╔════╝          ██║ ██╔════╝
+                                    ███╔╝  █████╗ ██║ █╗ ██║ ███████║ ██║   ██║ █████╗            ██║ ███████╗
+                                   ███╔╝   ╚════╝ ██║███╗██║ ██╔══██║ ╚██╗ ██╔╝ ██╔══╝       ██   ██║ ╚════██║
+                                  ███████╗        ╚███╔███╔╝ ██║  ██║  ╚████╔╝  ███████╗     ╚█████╔╝ ███████║
+                                  ╚══════╝         ╚══╝╚══╝  ╚═╝  ╚═╝   ╚═══╝   ╚══════╝      ╚════╝  ╚══════╝
+2024-12-04T07:18:19.324Z DRIVER   version 13.10.3
+2024-12-04T07:18:19.327Z DRIVER   
+2024-12-04T07:18:19.329Z DRIVER   starting driver...
+2024-12-04T07:18:19.331Z DRIVER   opening serial port /dev/zwave
+2024-12-04T07:18:19.363Z DRIVER   serial port opened
+2024-12-04T07:18:19.369Z SERIAL » 0x15                                                                 (1 bytes)
+2024-12-04T07:18:20.382Z DRIVER   loading configuration...
+2024-12-04T07:18:20.406Z CONFIG   Using external configuration dir /usr/src/app/store/.config-db
+2024-12-04T07:18:20.408Z CONFIG   version 13.10.3
+2024-12-04T07:18:21.872Z DRIVER   beginning interview...
+2024-12-04T07:18:21.879Z DRIVER   added request handler for AddNodeToNetwork (0x4a)...
+                                  1 registered
+2024-12-04T07:18:21.883Z DRIVER   added request handler for RemoveNodeFromNetwork (0x4b)...
+                                  1 registered
+2024-12-04T07:18:21.884Z DRIVER   added request handler for ReplaceFailedNode (0x63)...
+                                  1 registered
+2024-12-04T07:18:21.885Z DRIVER   added request handler for SetLearnMode (0x50)...
+                                  1 registered
+2024-12-04T07:18:21.888Z CNTRLR   querying Serial API capabilities...
+2024-12-04T07:18:22.295Z SERIAL » 0x01030007fb                                                         (5 bytes)
+2024-12-04T07:18:22.299Z DRIVER » [REQ] [GetSerialApiCapabilities]
+2024-12-04T07:18:22.322Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.331Z SERIAL « 0x012b0107070b000000040004f6873e88cf2bc04ffbd7fde00700008000808680b (45 bytes)
+                                  a05007000002e0000000000a3
+2024-12-04T07:18:22.338Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.346Z DRIVER « [RES] [GetSerialApiCapabilities]
+                                    payload: 0x070b000000040004f6873e88cf2bc04ffbd7fde00700008000808680ba0500700
+                                  0002e0000000000
+2024-12-04T07:18:22.365Z CNTRLR   received API capabilities:
+                                    firmware version:    7.11
+                                    manufacturer ID:     0x00
+                                    product type:        0x04
+                                    product ID:          0x04
+                                    supported functions: 
+                                    · GetSerialApiInitData (0x02)
+                                    · SetApplicationNodeInformation (0x03)
+                                    · GetControllerCapabilities (0x05)
+                                    · SetSerialApiTimeouts (0x06)
+                                    · GetSerialApiCapabilities (0x07)
+                                    · SoftReset (0x08)
+                                    · GetProtocolVersion (0x09)
+                                    · SerialAPIStarted (0x0a)
+                                    · SerialAPISetup (0x0b)
+                                    · SetRFReceiveMode (0x10)
+                                    · SendNodeInformation (0x12)
+                                    · SendData (0x13)
+                                    · SendDataMulticast (0x14)
+                                    · GetControllerVersion (0x15)
+                                    · SendDataAbort (0x16)
+                                    · FUNC_ID_ZW_GET_RANDOM (0x1c)
+                                    · GetControllerId (0x20)
+                                    · UNKNOWN_FUNC_MEMORY_GET_BYTE (0x21)
+                                    · UNKNOWN_FUNC_MEMORY_PUT_BYTE (0x22)
+                                    · UNKNOWN_FUNC_MEMORY_GET_BUFFER (0x23)
+                                    · UNKNOWN_FUNC_MEMORY_PUT_BUFFER (0x24)
+                                    · EnterBootloader (0x27)
+                                    · UNKNOWN_FUNC_UNKNOWN_0x28 (0x28)
+                                    · GetNVMId (0x29)
+                                    · ExtNVMReadLongBuffer (0x2a)
+                                    · ExtNVMReadLongByte (0x2c)
+                                    · NVMOperations (0x2e)
+                                    · ClearTxTimers (0x37)
+                                    · GetTxTimers (0x38)
+                                    · ClearNetworkStats (0x39)
+                                    · GetNetworkStats (0x3a)
+                                    · GetBackgroundRSSI (0x3b)
+                                    · SetListenBeforeTalkThreshold (0x3c)
+                                    · RemoveSpecificNodeIdFromNetwork (0x3f)
+                                    · GetNodeProtocolInfo (0x41)
+                                    · HardReset (0x42)
+                                    · FUNC_ID_ZW_REPLICATION_COMMAND_COMPLETE (0x44)
+                                    · FUNC_ID_ZW_REPLICATION_SEND_DATA (0x45)
+                                    · AssignReturnRoute (0x46)
+                                    · DeleteReturnRoute (0x47)
+                                    · RequestNodeNeighborUpdate (0x48)
+                                    · ApplicationUpdateRequest (0x49)
+                                    · AddNodeToNetwork (0x4a)
+                                    · RemoveNodeFromNetwork (0x4b)
+                                    · AddPrimaryController (0x4d)
+                                    · AssignPriorityReturnRoute (0x4f)
+                                    · SetLearnMode (0x50)
+                                    · AssignSUCReturnRoute (0x51)
+                                    · RequestNetworkUpdate (0x53)
+                                    · SetSUCNodeId (0x54)
+                                    · DeleteSUCReturnRoute (0x55)
+                                    · GetSUCNodeId (0x56)
+                                    · SendSUCNodeId (0x57)
+                                    · AssignPrioritySUCReturnRoute (0x58)
+                                    · ExploreRequestInclusion (0x5e)
+                                    · ExploreRequestExclusion (0x5f)
+                                    · RequestNodeInfo (0x60)
+                                    · RemoveFailedNode (0x61)
+                                    · IsFailedNode (0x62)
+                                    · ReplaceFailedNode (0x63)
+                                    · GetRoutingInfo (0x80)
+                                    · LockUnlockLastRoute (0x90)
+                                    · GetPriorityRoute (0x92)
+                                    · SetPriorityRoute (0x93)
+                                    · UNKNOWN_FUNC_UNKNOWN_0x98 (0x98)
+                                    · VirtualNodeSetNodeInfo (0xa0)
+                                    · VirtualNodeSendNodeInfo (0xa2)
+                                    · VirtualNodeSetLearnMode (0xa4)
+                                    · GetVirtualNodes (0xa5)
+                                    · IsVirtualNode (0xa6)
+                                    · BridgeApplicationCommand (0xa8)
+                                    · SendDataBridge (0xa9)
+                                    · SendDataMulticastBridge (0xab)
+                                    · GetLibrary (0xbd)
+                                    · SendTestFrame (0xbe)
+                                    · GetProtocolStatus (0xbf)
+                                    · StartWatchdog (0xd2)
+                                    · StopWatchdog (0xd3)
+                                    · SetMaximumRoutingAttempts (0xd4)
+                                    · SetMaxSmartStartInclusionRequestInterval (0xd6)
+2024-12-04T07:18:22.368Z CNTRLR   querying additional controller information...
+2024-12-04T07:18:22.382Z SERIAL » 0x01030002fe                                                         (5 bytes)
+2024-12-04T07:18:22.384Z DRIVER » [REQ] [GetSerialApiInitData]
+2024-12-04T07:18:22.391Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.417Z SERIAL « 0x0125010208081d6d0000000000000000000000000000000000000000000000000 (39 bytes)
+                                  00000000700ae
+2024-12-04T07:18:22.420Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.423Z DRIVER « [RES] [GetSerialApiInitData]
+                                    payload: 0x08081d6d000000000000000000000000000000000000000000000000000000000
+                                  700
+2024-12-04T07:18:22.429Z CNTRLR   received additional controller information:
+                                    Z-Wave API version:         8 (legacy)
+                                    Z-Wave chip type:           EFR32ZG14 / ZGM130S
+                                    node type                   Controller
+                                    controller role:            primary
+                                    controller is the SIS:      true
+                                    controller supports timers: false
+                                    Z-Wave Classic nodes:       1, 3, 4, 6, 7
+2024-12-04T07:18:22.430Z CNTRLR   querying version info...
+2024-12-04T07:18:22.438Z SERIAL » 0x01030015e9                                                         (5 bytes)
+2024-12-04T07:18:22.439Z DRIVER » [REQ] [GetControllerVersion]
+2024-12-04T07:18:22.445Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.449Z SERIAL « 0x011001155a2d5761766520372e3131000797                              (18 bytes)
+2024-12-04T07:18:22.452Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.455Z DRIVER « [RES] [GetControllerVersion]
+                                    payload: 0x5a2d5761766520372e31310007
+2024-12-04T07:18:22.460Z CNTRLR   received version info:
+                                    controller type: Bridge Controller
+                                    library version: Z-Wave 7.11
+2024-12-04T07:18:22.461Z CNTRLR   querying protocol version info...
+2024-12-04T07:18:22.468Z SERIAL » 0x01030009f5                                                         (5 bytes)
+2024-12-04T07:18:22.469Z DRIVER » [REQ] [GetProtocolVersion]
+2024-12-04T07:18:22.475Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.479Z SERIAL « 0x0119010900070b0000af303132333435363738394142434445464b            (27 bytes)
+2024-12-04T07:18:22.481Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.483Z DRIVER « [RES] [GetProtocolVersion]
+                                    payload: 0x00070b0000af30313233343536373839414243444546
+2024-12-04T07:18:22.486Z CNTRLR   received protocol version info:
+                                    protocol type:             Z-Wave
+                                    protocol version:          7.11.0
+                                    appl. framework build no.: 175
+                                    git commit hash:           30313233343536373839414243444546
+2024-12-04T07:18:22.488Z CNTRLR   querying controller capabilities...
+2024-12-04T07:18:22.495Z SERIAL » 0x01030005f9                                                         (5 bytes)
+2024-12-04T07:18:22.496Z DRIVER » [REQ] [GetControllerCapabilities]
+2024-12-04T07:18:22.501Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.503Z SERIAL « 0x010401051ce3                                                       (6 bytes)
+2024-12-04T07:18:22.505Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.508Z DRIVER « [RES] [GetControllerCapabilities]
+                                    payload: 0x1c
+2024-12-04T07:18:22.514Z CNTRLR   received controller capabilities:
+                                    controller role:      Primary
+                                    is the SUC:           true
+                                    started this network: true
+                                    SIS is present:       true
+                                    was real primary:     true
+2024-12-04T07:18:22.515Z CNTRLR   querying serial API setup capabilities...
+2024-12-04T07:18:22.522Z SERIAL » 0x0104000b01f1                                                       (6 bytes)
+2024-12-04T07:18:22.525Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetSupportedCommands
+                                    payload: 0x01
+2024-12-04T07:18:22.529Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.532Z SERIAL « 0x0105010b016e9f                                                     (7 bytes)
+2024-12-04T07:18:22.535Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.539Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetSupportedCommands
+                                    payload: 0x6e
+2024-12-04T07:18:22.543Z CNTRLR   supported serial API setup commands:
+                                  · GetSupportedCommands
+                                  · SetTxStatusReport
+                                  · SetPowerlevel
+                                  · GetPowerlevel
+                                  · GetRFRegion
+                                  · SetRFRegion
+2024-12-04T07:18:22.546Z CNTRLR   supported Z-Wave features: 
+                                    · SmartStart
+2024-12-04T07:18:22.548Z CNTRLR   Querying configured RF region...
+2024-12-04T07:18:22.555Z SERIAL » 0x0104000b20d0                                                       (6 bytes)
+2024-12-04T07:18:22.558Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    payload: 0x20
+2024-12-04T07:18:22.562Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.565Z SERIAL « 0x0105010b2000d0                                                     (7 bytes)
+2024-12-04T07:18:22.567Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.570Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    region:  Europe
+2024-12-04T07:18:22.573Z CNTRLR   The controller is using RF region Europe
+2024-12-04T07:18:22.575Z CNTRLR   Performing soft reset...
+2024-12-04T07:18:22.582Z SERIAL » 0x01030008f4                                                         (5 bytes)
+2024-12-04T07:18:22.583Z DRIVER » [REQ] [SoftReset]
+2024-12-04T07:18:22.588Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:22.593Z CNTRLR   Waiting for the controller to reconnect...
+2024-12-04T07:18:22.595Z DRIVER   all queues idle
+2024-12-04T07:18:23.753Z SERIAL « 0x0115000a03000102010c5e22855970565a7273989f86b1                    (23 bytes)
+2024-12-04T07:18:23.756Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.759Z DRIVER « [REQ] [SerialAPIStarted]
+                                    wake up reason:        WatchdogReset
+                                    watchdog enabled:      false
+                                    generic device class:  0x02
+                                    specific device class: 0x01
+                                    always listening:      false
+                                    supports Long Range:   false
+2024-12-04T07:18:23.762Z CNTRLR   reconnected and restarted
+2024-12-04T07:18:23.763Z CNTRLR   Starting hardware watchdog...
+2024-12-04T07:18:23.768Z DRIVER   one or more queues busy
+2024-12-04T07:18:23.770Z CNTRLR   querying controller IDs...
+2024-12-04T07:18:23.777Z SERIAL » 0x010300d22e                                                         (5 bytes)
+2024-12-04T07:18:23.779Z DRIVER » [REQ] [StartWatchdog]
+2024-12-04T07:18:23.819Z SERIAL » 0x01030020dc                                                         (5 bytes)
+2024-12-04T07:18:23.821Z DRIVER » [REQ] [GetControllerId]
+2024-12-04T07:18:23.826Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.829Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.832Z SERIAL « 0x01080120e3bf86fb01f6                                              (10 bytes)
+2024-12-04T07:18:23.835Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.838Z DRIVER « [RES] [GetControllerId]
+                                    home ID:     0xe3bf86fb
+                                    own node ID: 1
+2024-12-04T07:18:23.841Z CNTRLR   received controller IDs:
+                                    home ID:     0xe3bf86fb
+                                    own node ID: 1
+2024-12-04T07:18:23.843Z CNTRLR   Enabling TX status report...
+2024-12-04T07:18:23.849Z SERIAL » 0x0105000b02ff0c                                                     (7 bytes)
+2024-12-04T07:18:23.851Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: SetTxStatusReport
+                                    enabled: true
+2024-12-04T07:18:23.856Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.858Z SERIAL « 0x0105010b0201f3                                                     (7 bytes)
+2024-12-04T07:18:23.861Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.863Z DRIVER « [RES] [SerialAPISetup]
+                                    command: SetTxStatusReport
+                                    success: true
+2024-12-04T07:18:23.866Z CNTRLR   Enabling TX status report successful...
+2024-12-04T07:18:23.867Z CNTRLR   finding SUC...
+2024-12-04T07:18:23.874Z SERIAL » 0x01030056aa                                                         (5 bytes)
+2024-12-04T07:18:23.875Z DRIVER » [REQ] [GetSUCNodeId]
+2024-12-04T07:18:23.880Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.882Z SERIAL « 0x0104015601ad                                                       (6 bytes)
+2024-12-04T07:18:23.884Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:23.886Z DRIVER « [RES] [GetSUCNodeId]
+                                    payload: 0x01
+2024-12-04T07:18:23.889Z CNTRLR   This is the SUC
+2024-12-04T07:18:23.894Z DRIVER   all queues idle
+2024-12-04T07:18:23.975Z DRIVER   Cache file for homeId 0xe3bf86fb found, attempting to restore the network from
+                                   cache...
+2024-12-04T07:18:24.068Z CNTRLR   [Node 001] Embedded device config loaded
+2024-12-04T07:18:24.093Z CNTRLR   [Node 006] Embedded device config loaded
+2024-12-04T07:18:24.099Z CNTRLR   [Node 007] Embedded device config loaded
+2024-12-04T07:18:24.103Z DRIVER   Restoring the network from cache was successful!
+2024-12-04T07:18:24.115Z CNTRLR   [Node 001] [Manufacturer Specific] manufacturerId: metadata updated
+2024-12-04T07:18:24.117Z CNTRLR   [Node 001] [Manufacturer Specific] productType: metadata updated
+2024-12-04T07:18:24.119Z CNTRLR   [Node 001] [Manufacturer Specific] productId: metadata updated
+2024-12-04T07:18:24.122Z CNTRLR   [Node 001] [~] [Manufacturer Specific] manufacturerId: 0 => 0
+2024-12-04T07:18:24.125Z CNTRLR   [Node 001] [~] [Manufacturer Specific] productType: 4 => 4
+2024-12-04T07:18:24.127Z CNTRLR   [Node 001] [~] [Manufacturer Specific] productId: 4 => 4
+2024-12-04T07:18:24.129Z CNTRLR   [Node 001] [Version] firmwareVersions: metadata updated
+2024-12-04T07:18:24.132Z CNTRLR   [Node 001] [~] [Version] firmwareVersions: 7.11 => 7.11
+2024-12-04T07:18:24.134Z CNTRLR   [Node 001] [Version] zWaveProtocolVersion: metadata updated
+2024-12-04T07:18:24.136Z CNTRLR   [Node 001] [~] [Version] zWaveProtocolVersion: "7.11.0" => "7.11.0"
+2024-12-04T07:18:24.138Z CNTRLR   [Node 001] [Version] sdkVersion: metadata updated
+2024-12-04T07:18:24.140Z CNTRLR   [Node 001] [~] [Version] sdkVersion: "7.11.0" => "7.11.0"
+2024-12-04T07:18:24.141Z CNTRLR   Interview completed
+2024-12-04T07:18:24.142Z DRIVER   Network key for S0 configured, enabling S0 security manager...
+2024-12-04T07:18:24.147Z DRIVER   At least one network key for S2 configured, enabling S2 security manager...
+2024-12-04T07:18:24.163Z DRIVER   At least one network key for Z-Wave Long Range configured, enabling security m
+                                  anager...
+2024-12-04T07:18:24.167Z DRIVER   driver ready
+2024-12-04T07:18:24.174Z DRIVER   Checking for configuration updates...
+2024-12-04T07:18:24.279Z CNTRLR   [Node 001] The node is alive.
+2024-12-04T07:18:24.430Z CNTRLR   [Node 001] The node is ready to be used
+2024-12-04T07:18:24.432Z CNTRLR   Interviewing nodes and/or determining their status: 6, 7, 3, 4
+2024-12-04T07:18:24.434Z CNTRLR » [Node 006] pinging the node...
+2024-12-04T07:18:24.445Z CNTRLR » [Node 007] pinging the node...
+2024-12-04T07:18:24.452Z CNTRLR   [Node 003] Beginning interview - last completed stage: ProtocolInfo
+2024-12-04T07:18:24.453Z CNTRLR » [Node 003] pinging the node...
+2024-12-04T07:18:24.491Z CNTRLR   [Node 004] Beginning interview - last completed stage: ProtocolInfo
+2024-12-04T07:18:24.492Z CNTRLR » [Node 004] pinging the node...
+2024-12-04T07:18:24.497Z DRIVER   one or more queues busy
+2024-12-04T07:18:24.501Z SERIAL » 0x0104000b08f8                                                       (6 bytes)
+2024-12-04T07:18:24.502Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetPowerlevel
+                                    payload: 0x08
+2024-12-04T07:18:24.558Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.560Z SERIAL « 0x0106010b08630098                                                   (8 bytes)
+2024-12-04T07:18:24.564Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.566Z DRIVER « [RES] [SerialAPISetup]
+                                    command:               GetPowerlevel
+                                    normal powerlevel:     9.9 dBm
+                                    output power at 0 dBm: 0.0 dBm
+2024-12-04T07:18:24.574Z SERIAL » 0x0104000b20d0                                                       (6 bytes)
+2024-12-04T07:18:24.575Z DRIVER » [REQ] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    payload: 0x20
+2024-12-04T07:18:24.616Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.618Z SERIAL « 0x0105010b2000d0                                                     (7 bytes)
+2024-12-04T07:18:24.619Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.621Z DRIVER « [RES] [SerialAPISetup]
+                                    command: GetRFRegion
+                                    region:  Europe
+2024-12-04T07:18:24.630Z SERIAL » 0x010d00a90106010025000000000179                                    (15 bytes)
+2024-12-04T07:18:24.633Z DRIVER » [Node 006] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      1
+                                  └─[NoOperationCC]
+2024-12-04T07:18:24.739Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.742Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:18:24.744Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.748Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:18:24.825Z SERIAL « 0x011800a90100000100db7f7f7f7f000003000000000301000094              (26 bytes)
+2024-12-04T07:18:24.829Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.833Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            1
+                                    transmit status:        OK, took 10 ms
+                                    routing attempts:       1
+                                    protocol & route speed: Z-Wave, 100 kbit/s
+                                    routing scheme:         LWR
+                                    ACK RSSI:               -37 dBm
+                                    ACK channel no.:        0
+                                    TX channel no.:         0
+2024-12-04T07:18:24.844Z CNTRLR   [Node 006] The node is alive.
+2024-12-04T07:18:24.920Z CNTRLR   Retrieving priority route to node 6...
+2024-12-04T07:18:24.925Z CNTRLR   [Node 006] The node is ready to be used
+2024-12-04T07:18:24.928Z CNTRLR « [Node 006] ping successful
+2024-12-04T07:18:24.931Z SERIAL » 0x010d00a9010701002500000000027b                                    (15 bytes)
+2024-12-04T07:18:24.933Z DRIVER » [Node 007] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      2
+                                  └─[NoOperationCC]
+2024-12-04T07:18:24.974Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.977Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:18:24.978Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:24.981Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:18:25.593Z DRIVER   No configuration update available...
+2024-12-04T07:18:29.675Z SERIAL « 0x011800a9020101d5007f7f7f7f7f01010700000000020c0607ee              (26 bytes)
+2024-12-04T07:18:29.678Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:29.681Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            2
+                                    transmit status:        NoAck, took 4690 ms
+                                    routing attempts:       12
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+                                    route failed here:      6 -> 7
+2024-12-04T07:18:29.685Z CNTRLR   [Node 007] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:18:29.688Z CNTRLR   [Node 007] The node is dead.
+2024-12-04T07:18:29.692Z CNTRLR   [Node 007] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:18:29.695Z SERIAL » 0x010d00a9010301002500000000037e                                    (15 bytes)
+2024-12-04T07:18:29.697Z DRIVER » [Node 003] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      3
+                                  └─[NoOperationCC]
+2024-12-04T07:18:29.706Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:29.708Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:18:29.709Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:29.710Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:18:34.872Z SERIAL « 0x011800a903010201007f7f7f7f7f00010700000000020d000039              (26 bytes)
+2024-12-04T07:18:34.874Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:34.875Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            3
+                                    transmit status:        NoAck, took 5130 ms
+                                    routing attempts:       13
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+2024-12-04T07:18:34.878Z CNTRLR   [Node 003] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:18:34.880Z CNTRLR   [Node 003] The node is dead.
+2024-12-04T07:18:34.883Z CNTRLR   [Node 003] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:18:34.884Z CNTRLR   [Node 003] Interview attempt (1/5) failed, node is dead.
+2024-12-04T07:18:34.888Z SERIAL » 0x010d00a9010401002500000000047e                                    (15 bytes)
+2024-12-04T07:18:34.889Z DRIVER » [Node 004] [REQ] [SendDataBridge]
+                                  │ source node id:   1
+                                  │ transmit options: 0x25
+                                  │ callback id:      4
+                                  └─[NoOperationCC]
+2024-12-04T07:18:34.893Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:34.896Z SERIAL « 0x010401a90152                                                       (6 bytes)
+2024-12-04T07:18:34.897Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:34.898Z DRIVER « [RES] [SendDataBridge]
+                                    was sent: true
+2024-12-04T07:18:42.671Z SERIAL « 0x011800a904010304007f7f7f7f7f01010700000000020d00003b              (26 bytes)
+2024-12-04T07:18:42.675Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:42.679Z DRIVER « [REQ] [SendDataBridge]
+                                    callback id:            4
+                                    transmit status:        NoAck, took 7720 ms
+                                    routing attempts:       13
+                                    protocol & route speed: Z-Wave, 40 kbit/s
+                                    routing scheme:         Explorer Frame
+                                    TX channel no.:         1
+2024-12-04T07:18:42.684Z CNTRLR   [Node 004] The node did not respond after 1 attempts, it is presumed dead
+2024-12-04T07:18:42.688Z CNTRLR   [Node 004] The node is dead.
+2024-12-04T07:18:42.690Z CNTRLR   All nodes are ready to be used
+2024-12-04T07:18:42.704Z CNTRLR   [Node 004] ping failed: The node did not acknowledge the command (ZW0204)
+2024-12-04T07:18:42.706Z CNTRLR   [Node 004] Interview attempt (1/5) failed, node is dead.
+2024-12-04T07:18:42.717Z SERIAL » 0x01040092066f                                                       (6 bytes)
+2024-12-04T07:18:42.719Z DRIVER » [REQ] [GetPriorityRoute]
+                                    node ID: 6
+2024-12-04T07:18:42.739Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:42.742Z SERIAL « 0x010a01920601000000000362                                          (12 bytes)
+2024-12-04T07:18:42.745Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:42.748Z DRIVER « [RES] [GetPriorityRoute]
+                                    node ID:     6
+                                    route kind:  LWR
+                                    repeaters:   none
+                                    route speed: 100k
+2024-12-04T07:18:42.757Z DRIVER   all queues idle
+2024-12-04T07:18:43.129Z DRIVER   Usage statistics sent - next transmission scheduled in 23 hours.
+2024-12-04T07:18:47.761Z DRIVER   one or more queues busy
+2024-12-04T07:18:47.765Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:18:47.766Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:18:47.771Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:18:47.772Z SERIAL « 0x0106013b9da3a15c                                                   (8 bytes)
+2024-12-04T07:18:47.774Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:47.777Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -93 dBm
+                                    channel 2: -95 dBm
+2024-12-04T07:18:47.781Z DRIVER   all queues idle
+2024-12-04T07:18:55.579Z SERIAL « 0x010f00a8000106063105012200cb00dc59                                (17 bytes)
+2024-12-04T07:18:55.586Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:18:55.594Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:18:55.598Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 19.8 => 20.3  [Endpoint 0]
+2024-12-04T07:18:55.603Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -36 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       20.3
+2024-12-04T07:19:17.766Z DRIVER   one or more queues busy
+2024-12-04T07:19:17.774Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:19:17.775Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:19:17.782Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:19:17.785Z SERIAL « 0x0106013baaa49f52                                                   (8 bytes)
+2024-12-04T07:19:17.788Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:19:17.791Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -97 dBm
+2024-12-04T07:19:17.798Z DRIVER   all queues idle
+2024-12-04T07:19:47.763Z DRIVER   one or more queues busy
+2024-12-04T07:19:47.769Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:19:47.771Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:19:47.775Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:19:47.777Z SERIAL « 0x0106013ba8a29b52                                                   (8 bytes)
+2024-12-04T07:19:47.784Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:19:47.787Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:19:47.791Z DRIVER   all queues idle
+2024-12-04T07:20:17.764Z DRIVER   one or more queues busy
+2024-12-04T07:20:17.779Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:20:17.780Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:20:17.785Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:20:17.789Z SERIAL « 0x0106013ba8a29f56                                                   (8 bytes)
+2024-12-04T07:20:17.791Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:20:17.794Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -97 dBm
+2024-12-04T07:20:17.800Z DRIVER   all queues idle
+2024-12-04T07:20:47.763Z DRIVER   one or more queues busy
+2024-12-04T07:20:47.766Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:20:47.767Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:20:47.772Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:20:47.773Z SERIAL « 0x0106013baba19c55                                                   (8 bytes)
+2024-12-04T07:20:47.775Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:20:47.777Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:20:47.780Z DRIVER   all queues idle
+2024-12-04T07:21:17.764Z DRIVER   one or more queues busy
+2024-12-04T07:21:17.771Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:21:17.773Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:21:17.778Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:21:17.781Z SERIAL « 0x0106013ba9a1a269                                                   (8 bytes)
+2024-12-04T07:21:17.786Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:21:17.794Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -87 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -94 dBm
+2024-12-04T07:21:17.799Z DRIVER   all queues idle
+2024-12-04T07:21:47.767Z DRIVER   one or more queues busy
+2024-12-04T07:21:47.774Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:21:47.783Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:21:47.788Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:21:47.792Z SERIAL « 0x0106013baa9f9a6c                                                   (8 bytes)
+2024-12-04T07:21:47.795Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:21:47.799Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -97 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:21:47.806Z DRIVER   all queues idle
+2024-12-04T07:22:17.769Z DRIVER   one or more queues busy
+2024-12-04T07:22:17.772Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:22:17.773Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:22:17.778Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:22:17.780Z SERIAL « 0x0106013bab9d9a6f                                                   (8 bytes)
+2024-12-04T07:22:17.781Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:22:17.783Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:22:17.787Z DRIVER   all queues idle
+2024-12-04T07:22:47.768Z DRIVER   one or more queues busy
+2024-12-04T07:22:47.776Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:22:47.778Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:22:47.783Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:22:47.787Z SERIAL « 0x0106013ba6a79c5e                                                   (8 bytes)
+2024-12-04T07:22:47.790Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:22:47.794Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -90 dBm
+                                    channel 1: -89 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:22:47.801Z DRIVER   all queues idle
+2024-12-04T07:22:55.579Z SERIAL « 0x010f00a8000106063105012200d000dd43                                (17 bytes)
+2024-12-04T07:22:55.590Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:22:55.601Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:22:55.609Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 20.3 => 20.8  [Endpoint 0]
+2024-12-04T07:22:55.616Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -35 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       20.8
+2024-12-04T07:23:17.771Z DRIVER   one or more queues busy
+2024-12-04T07:23:17.785Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:23:17.787Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:23:17.794Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:23:17.798Z SERIAL « 0x0106013bac9f9969                                                   (8 bytes)
+2024-12-04T07:23:17.801Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:23:17.806Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -84 dBm
+                                    channel 1: -97 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:23:17.812Z DRIVER   all queues idle
+2024-12-04T07:23:47.771Z DRIVER   one or more queues busy
+2024-12-04T07:23:47.786Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:23:47.788Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:23:47.793Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:23:47.797Z SERIAL « 0x0106013baaa39b51                                                   (8 bytes)
+2024-12-04T07:23:47.800Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:23:47.804Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -93 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:23:47.813Z DRIVER   all queues idle
+2024-12-04T07:24:17.770Z DRIVER   one or more queues busy
+2024-12-04T07:24:17.773Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:24:17.774Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:24:17.779Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:24:17.780Z SERIAL « 0x0106013baba19a53                                                   (8 bytes)
+2024-12-04T07:24:17.782Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:24:17.784Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:24:17.787Z DRIVER   all queues idle
+2024-12-04T07:24:47.770Z DRIVER   one or more queues busy
+2024-12-04T07:24:47.774Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:24:47.775Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:24:47.779Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:24:47.781Z SERIAL « 0x0106013bac9f9c6c                                                   (8 bytes)
+2024-12-04T07:24:47.782Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:24:47.784Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -84 dBm
+                                    channel 1: -97 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:24:47.790Z DRIVER   all queues idle
+2024-12-04T07:25:17.773Z DRIVER   one or more queues busy
+2024-12-04T07:25:17.781Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:25:17.783Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:25:17.788Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:25:17.798Z SERIAL « 0x0106013baaa49c51                                                   (8 bytes)
+2024-12-04T07:25:17.802Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:25:17.809Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:25:17.816Z DRIVER   all queues idle
+2024-12-04T07:25:47.772Z DRIVER   one or more queues busy
+2024-12-04T07:25:47.782Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:25:47.789Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:25:47.794Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:25:47.798Z SERIAL « 0x0106013baaa4a16c                                                   (8 bytes)
+2024-12-04T07:25:47.800Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:25:47.807Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -95 dBm
+2024-12-04T07:25:47.811Z DRIVER   all queues idle
+2024-12-04T07:26:17.771Z DRIVER   one or more queues busy
+2024-12-04T07:26:17.777Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:26:17.779Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:26:17.785Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:26:17.787Z SERIAL « 0x0106013ba5a29e5a                                                   (8 bytes)
+2024-12-04T07:26:17.789Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:26:17.791Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -91 dBm
+                                    channel 1: -94 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:26:17.794Z DRIVER   all queues idle
+2024-12-04T07:26:47.773Z DRIVER   one or more queues busy
+2024-12-04T07:26:47.780Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:26:47.782Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:26:47.788Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:26:47.791Z SERIAL « 0x0106013ba7a1a065                                                   (8 bytes)
+2024-12-04T07:26:47.793Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:26:47.796Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -96 dBm
+2024-12-04T07:26:47.806Z DRIVER   all queues idle
+2024-12-04T07:27:17.772Z DRIVER   one or more queues busy
+2024-12-04T07:27:17.775Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:27:17.776Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:27:17.781Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:27:17.783Z SERIAL « 0x0106013ba8aaa766                                                   (8 bytes)
+2024-12-04T07:27:17.784Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:27:17.790Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -89 dBm
+2024-12-04T07:27:17.794Z DRIVER   all queues idle
+2024-12-04T07:27:47.774Z DRIVER   one or more queues busy
+2024-12-04T07:27:47.782Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:27:47.784Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:27:47.789Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:27:47.799Z SERIAL « 0x0106013baea6a66d                                                   (8 bytes)
+2024-12-04T07:27:47.801Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:27:47.805Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -82 dBm
+                                    channel 1: -90 dBm
+                                    channel 2: -90 dBm
+2024-12-04T07:27:47.821Z DRIVER   all queues idle
+2024-12-04T07:28:17.772Z DRIVER   one or more queues busy
+2024-12-04T07:28:17.777Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:28:17.778Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:28:17.783Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:28:17.785Z SERIAL « 0x0106013bab9c9a6e                                                   (8 bytes)
+2024-12-04T07:28:17.786Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:28:17.791Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:28:17.794Z DRIVER   all queues idle
+2024-12-04T07:28:47.774Z DRIVER   one or more queues busy
+2024-12-04T07:28:47.781Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:28:47.783Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:28:47.788Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:28:47.798Z SERIAL « 0x0106013baf9d9a6b                                                   (8 bytes)
+2024-12-04T07:28:47.800Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:28:47.803Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -81 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:28:47.807Z DRIVER   all queues idle
+2024-12-04T07:28:55.579Z SERIAL « 0x010f00a8000106063105012200d600dd45                                (17 bytes)
+2024-12-04T07:28:55.588Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:28:55.594Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:28:55.599Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 20.8 => 21.4  [Endpoint 0]
+2024-12-04T07:28:55.603Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -35 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       21.4
+2024-12-04T07:29:17.774Z DRIVER   one or more queues busy
+2024-12-04T07:29:17.777Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:29:17.778Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:29:17.783Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:29:17.785Z SERIAL « 0x0106013baa9a996a                                                   (8 bytes)
+2024-12-04T07:29:17.786Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:29:17.788Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -102 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:29:17.791Z DRIVER   all queues idle
+2024-12-04T07:29:47.774Z DRIVER   one or more queues busy
+2024-12-04T07:29:47.778Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:29:47.779Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:29:47.786Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:29:47.789Z SERIAL « 0x0106013bac9d9a68                                                   (8 bytes)
+2024-12-04T07:29:47.792Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:29:47.794Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -84 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:29:47.798Z DRIVER   all queues idle
+2024-12-04T07:30:17.774Z DRIVER   one or more queues busy
+2024-12-04T07:30:17.778Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:30:17.779Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:30:17.783Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:30:17.785Z SERIAL « 0x0106013baf9d9a6b                                                   (8 bytes)
+2024-12-04T07:30:17.786Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:30:17.788Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -81 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:30:17.790Z DRIVER   all queues idle
+2024-12-04T07:30:47.777Z DRIVER   one or more queues busy
+2024-12-04T07:30:47.785Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:30:47.787Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:30:47.792Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:30:47.796Z SERIAL « 0x0106013bad9d996a                                                   (8 bytes)
+2024-12-04T07:30:47.799Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:30:47.802Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:30:47.811Z DRIVER   all queues idle
+2024-12-04T07:31:17.776Z DRIVER   one or more queues busy
+2024-12-04T07:31:17.780Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:31:17.781Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:31:17.786Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:31:17.788Z SERIAL « 0x0106013baa9e9e69                                                   (8 bytes)
+2024-12-04T07:31:17.789Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:31:17.791Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -98 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:31:17.793Z DRIVER   all queues idle
+2024-12-04T07:31:47.778Z DRIVER   one or more queues busy
+2024-12-04T07:31:47.784Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:31:47.786Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:31:47.796Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:31:47.800Z SERIAL « 0x0106013bad9d9a69                                                   (8 bytes)
+2024-12-04T07:31:47.802Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:31:47.805Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:31:47.811Z DRIVER   all queues idle
+2024-12-04T07:32:17.776Z DRIVER   one or more queues busy
+2024-12-04T07:32:17.782Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:32:17.783Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:32:17.787Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:32:17.789Z SERIAL « 0x0106013ba99c996f                                                   (8 bytes)
+2024-12-04T07:32:17.790Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:32:17.792Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -87 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:32:17.795Z DRIVER   all queues idle
+2024-12-04T07:32:46.127Z SERIAL « 0x011200a8000106097105000000ff0d000000d419                          (20 bytes)
+2024-12-04T07:32:46.136Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:32:46.151Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T07:32:46.157Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T07:32:46.173Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -44 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   13
+                                      notification status: 255
+                                      notification state:  idle
+2024-12-04T07:32:46.359Z SERIAL « 0x011200a8000106097105000000ff0d000000d419                          (20 bytes)
+2024-12-04T07:32:46.361Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:32:46.363Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T07:32:46.367Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T07:32:46.370Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -44 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   13
+                                      notification status: 255
+                                      notification state:  idle
+2024-12-04T07:32:47.776Z DRIVER   one or more queues busy
+2024-12-04T07:32:47.779Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:32:47.780Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:32:47.785Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:32:47.787Z SERIAL « 0x0106013ba997926f                                                   (8 bytes)
+2024-12-04T07:32:47.788Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:32:47.791Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -87 dBm
+                                    channel 1: -105 dBm
+                                    channel 2: -110 dBm
+2024-12-04T07:32:47.794Z DRIVER   all queues idle
+2024-12-04T07:33:17.779Z DRIVER   one or more queues busy
+2024-12-04T07:33:17.787Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:33:17.788Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:33:17.799Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:33:17.803Z SERIAL « 0x0106013ba7959362                                                   (8 bytes)
+2024-12-04T07:33:17.805Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:33:17.809Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -107 dBm
+                                    channel 2: -109 dBm
+2024-12-04T07:33:17.814Z DRIVER   all queues idle
+2024-12-04T07:33:46.386Z SERIAL « 0x010f00a8000106063105012200d400d349                                (17 bytes)
+2024-12-04T07:33:46.391Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:33:46.397Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T07:33:46.408Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 21.4 => 21.2  [Endpoint 0]
+2024-12-04T07:33:46.412Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -45 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       21.2
+2024-12-04T07:33:46.417Z SERIAL « 0x010f00a80001060631050502002500d39c                                (17 bytes)
+2024-12-04T07:33:46.419Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:33:46.423Z CNTRLR   [Node 006] [Multilevel Sensor] Humidity: metadata updated         [Endpoint 0]
+2024-12-04T07:33:46.427Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Humidity: 39 => 37             [Endpoint 0]
+2024-12-04T07:33:46.432Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -45 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Humidity
+                                      scale:       Percentage value
+                                      value:       37
+2024-12-04T07:33:46.436Z SERIAL « 0x011300a80001060a7105000000ff0d06010100d31a                        (21 bytes)
+2024-12-04T07:33:46.438Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:33:46.443Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T07:33:46.447Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T07:33:46.451Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -45 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   Home Health
+                                      notification status: 255
+                                      notification state:  Volatile Organic Compound level
+                                      state parameters:    Clean
+2024-12-04T07:33:46.457Z CNTRLR   [Node 006] [~] [Notification] Home Health[VOC level status]: 1 => [Endpoint 0]
+                                   1
+2024-12-04T07:33:47.779Z DRIVER   one or more queues busy
+2024-12-04T07:33:47.785Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:33:47.787Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:33:47.792Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:33:47.795Z SERIAL « 0x0106013b9f93945b                                                   (8 bytes)
+2024-12-04T07:33:47.797Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:33:47.800Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -97 dBm
+                                    channel 1: -109 dBm
+                                    channel 2: -108 dBm
+2024-12-04T07:33:47.806Z DRIVER   all queues idle
+2024-12-04T07:34:17.779Z DRIVER   one or more queues busy
+2024-12-04T07:34:17.782Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:34:17.783Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:34:17.788Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:34:17.789Z SERIAL « 0x0106013ba99d996e                                                   (8 bytes)
+2024-12-04T07:34:17.792Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:34:17.794Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -87 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:34:17.796Z DRIVER   all queues idle
+2024-12-04T07:34:46.392Z SERIAL « 0x011100a800010608310511040000021b00d4a5                            (19 bytes)
+2024-12-04T07:34:46.414Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:34:46.424Z CNTRLR   [Node 006] [Multilevel Sensor] Carbon dioxide (CO₂) level: metada [Endpoint 0]
+                                  ta updated
+2024-12-04T07:34:46.470Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Carbon dioxide (CO₂) level: 40 [Endpoint 0]
+                                  0 => 539
+2024-12-04T07:34:46.483Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -44 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Carbon dioxide (CO₂) level
+                                      scale:       Parts/million
+                                      value:       539
+2024-12-04T07:34:47.779Z DRIVER   one or more queues busy
+2024-12-04T07:34:47.785Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:34:47.787Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:34:47.793Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:34:47.796Z SERIAL « 0x0106013ba6989a67                                                   (8 bytes)
+2024-12-04T07:34:47.797Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:34:47.799Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -90 dBm
+                                    channel 1: -104 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:34:47.803Z DRIVER   all queues idle
+2024-12-04T07:35:17.790Z DRIVER   one or more queues busy
+2024-12-04T07:35:17.804Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:35:17.808Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:35:17.815Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:35:17.817Z SERIAL « 0x0106013bafa09d51                                                   (8 bytes)
+2024-12-04T07:35:17.818Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:35:17.820Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -81 dBm
+                                    channel 1: -96 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:35:17.823Z DRIVER   all queues idle
+2024-12-04T07:35:47.779Z DRIVER   one or more queues busy
+2024-12-04T07:35:47.789Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:35:47.790Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:35:47.796Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:35:47.798Z SERIAL « 0x0106013bada49c56                                                   (8 bytes)
+2024-12-04T07:35:47.800Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:35:47.802Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:35:47.806Z DRIVER   all queues idle
+2024-12-04T07:36:17.783Z DRIVER   one or more queues busy
+2024-12-04T07:36:17.789Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:36:17.790Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:36:17.795Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:36:17.797Z SERIAL « 0x0106013baf9e9a68                                                   (8 bytes)
+2024-12-04T07:36:17.798Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:36:17.806Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -81 dBm
+                                    channel 1: -98 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:36:17.808Z DRIVER   all queues idle
+2024-12-04T07:36:47.792Z DRIVER   one or more queues busy
+2024-12-04T07:36:47.811Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:36:47.822Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:36:47.850Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:36:47.855Z SERIAL « 0x0106013baea5a169                                                   (8 bytes)
+2024-12-04T07:36:47.862Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:36:47.864Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -82 dBm
+                                    channel 1: -91 dBm
+                                    channel 2: -95 dBm
+2024-12-04T07:36:47.867Z DRIVER   all queues idle
+2024-12-04T07:37:17.786Z DRIVER   one or more queues busy
+2024-12-04T07:37:17.789Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:37:17.795Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:37:17.802Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:37:17.804Z SERIAL « 0x0106013bae9f9c6e                                                   (8 bytes)
+2024-12-04T07:37:17.806Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:37:17.815Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -82 dBm
+                                    channel 1: -97 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:37:17.822Z DRIVER   all queues idle
+2024-12-04T07:37:47.788Z DRIVER   one or more queues busy
+2024-12-04T07:37:47.796Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:37:47.798Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:37:47.806Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:37:47.810Z SERIAL « 0x0106013bada69d55                                                   (8 bytes)
+2024-12-04T07:37:47.817Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:37:47.820Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -90 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:37:47.827Z DRIVER   all queues idle
+2024-12-04T07:38:17.788Z DRIVER   one or more queues busy
+2024-12-04T07:38:17.791Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:38:17.792Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:38:17.796Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:38:17.798Z SERIAL « 0x0106013baa9c996c                                                   (8 bytes)
+2024-12-04T07:38:17.799Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:38:17.801Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:38:17.804Z DRIVER   all queues idle
+2024-12-04T07:38:47.790Z DRIVER   one or more queues busy
+2024-12-04T07:38:47.797Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:38:47.799Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:38:47.804Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:38:47.808Z SERIAL « 0x0106013bada49b51                                                   (8 bytes)
+2024-12-04T07:38:47.811Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:38:47.815Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:38:47.822Z DRIVER   all queues idle
+2024-12-04T07:39:17.790Z DRIVER   one or more queues busy
+2024-12-04T07:39:17.797Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:39:17.799Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:39:17.804Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:39:17.808Z SERIAL « 0x0106013bad9a996d                                                   (8 bytes)
+2024-12-04T07:39:17.810Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:39:17.814Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -102 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:39:17.819Z DRIVER   all queues idle
+2024-12-04T07:39:47.795Z DRIVER   one or more queues busy
+2024-12-04T07:39:47.802Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:39:47.804Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:39:47.810Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:39:47.814Z SERIAL « 0x0106013bad9d9b68                                                   (8 bytes)
+2024-12-04T07:39:47.816Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:39:47.820Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:39:47.826Z DRIVER   all queues idle
+2024-12-04T07:40:17.790Z DRIVER   one or more queues busy
+2024-12-04T07:40:17.795Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:40:17.796Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:40:17.800Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:40:17.802Z SERIAL « 0x0106013bae9b996f                                                   (8 bytes)
+2024-12-04T07:40:17.803Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:40:17.805Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -82 dBm
+                                    channel 1: -101 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:40:17.808Z DRIVER   all queues idle
+2024-12-04T07:40:47.792Z DRIVER   one or more queues busy
+2024-12-04T07:40:47.805Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:40:47.807Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:40:47.814Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:40:47.817Z SERIAL « 0x0106013bab9d996c                                                   (8 bytes)
+2024-12-04T07:40:47.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:40:47.823Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:40:47.829Z DRIVER   all queues idle
+2024-12-04T07:41:17.793Z DRIVER   one or more queues busy
+2024-12-04T07:41:17.807Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:41:17.810Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:41:17.817Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:41:17.826Z SERIAL « 0x0106013bb29b9872                                                   (8 bytes)
+2024-12-04T07:41:17.829Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:41:17.833Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -78 dBm
+                                    channel 1: -101 dBm
+                                    channel 2: -104 dBm
+2024-12-04T07:41:17.840Z DRIVER   all queues idle
+2024-12-04T07:41:47.793Z DRIVER   one or more queues busy
+2024-12-04T07:41:47.799Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:41:47.801Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:41:47.805Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:41:47.808Z SERIAL « 0x0106013bad9d996a                                                   (8 bytes)
+2024-12-04T07:41:47.810Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:41:47.814Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -83 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:41:47.822Z DRIVER   all queues idle
+2024-12-04T07:42:17.792Z DRIVER   one or more queues busy
+2024-12-04T07:42:17.796Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:42:17.797Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:42:17.802Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:42:17.805Z SERIAL « 0x0106013baf9f996a                                                   (8 bytes)
+2024-12-04T07:42:17.806Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:42:17.809Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -81 dBm
+                                    channel 1: -97 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:42:17.813Z DRIVER   all queues idle
+2024-12-04T07:42:47.792Z DRIVER   one or more queues busy
+2024-12-04T07:42:47.795Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:42:47.796Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:42:47.801Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:42:47.803Z SERIAL « 0x0106013ba7a89d51                                                   (8 bytes)
+2024-12-04T07:42:47.804Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:42:47.806Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:42:47.809Z DRIVER   all queues idle
+2024-12-04T07:43:17.794Z DRIVER   one or more queues busy
+2024-12-04T07:43:17.800Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:43:17.802Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:43:17.807Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:43:17.810Z SERIAL « 0x0106013b9cae9a6b                                                   (8 bytes)
+2024-12-04T07:43:17.812Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:43:17.816Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -82 dBm
+                                    channel 2: -102 dBm
+2024-12-04T07:43:17.821Z DRIVER   all queues idle
+2024-12-04T07:43:47.792Z DRIVER   one or more queues busy
+2024-12-04T07:43:47.796Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:43:47.796Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:43:47.801Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:43:47.803Z SERIAL « 0x0106013ba2a89e57                                                   (8 bytes)
+2024-12-04T07:43:47.805Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:43:47.807Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -94 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:43:47.809Z DRIVER   all queues idle
+2024-12-04T07:44:17.792Z DRIVER   one or more queues busy
+2024-12-04T07:44:17.796Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:44:17.797Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:44:17.803Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:44:17.805Z SERIAL « 0x0106013b9da89c6a                                                   (8 bytes)
+2024-12-04T07:44:17.806Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:44:17.809Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:44:17.812Z DRIVER   all queues idle
+2024-12-04T07:44:47.794Z DRIVER   one or more queues busy
+2024-12-04T07:44:47.805Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:44:47.807Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:44:47.813Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:44:47.817Z SERIAL « 0x0106013ba7aaa26c                                                   (8 bytes)
+2024-12-04T07:44:47.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:44:47.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -94 dBm
+2024-12-04T07:44:47.828Z DRIVER   all queues idle
+2024-12-04T07:45:17.794Z DRIVER   one or more queues busy
+2024-12-04T07:45:17.801Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:45:17.803Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:45:17.812Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:45:17.816Z SERIAL « 0x0106013b9cac9d6e                                                   (8 bytes)
+2024-12-04T07:45:17.819Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:45:17.822Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:45:17.828Z DRIVER   all queues idle
+2024-12-04T07:45:47.795Z DRIVER   one or more queues busy
+2024-12-04T07:45:47.803Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:45:47.805Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:45:47.816Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:45:47.819Z SERIAL « 0x0106013ba1a4985e                                                   (8 bytes)
+2024-12-04T07:45:47.822Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:45:47.826Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -95 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -104 dBm
+2024-12-04T07:45:47.832Z DRIVER   all queues idle
+2024-12-04T07:46:17.794Z DRIVER   one or more queues busy
+2024-12-04T07:46:17.798Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:46:17.799Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:46:17.804Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:46:17.806Z SERIAL « 0x0106013ba2a6995e                                                   (8 bytes)
+2024-12-04T07:46:17.807Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:46:17.809Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -94 dBm
+                                    channel 1: -90 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:46:17.811Z DRIVER   all queues idle
+2024-12-04T07:46:47.795Z DRIVER   one or more queues busy
+2024-12-04T07:46:47.802Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:46:47.804Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:46:47.813Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:46:47.818Z SERIAL « 0x0106013ba8a19c56                                                   (8 bytes)
+2024-12-04T07:46:47.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:46:47.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:46:47.830Z DRIVER   all queues idle
+2024-12-04T07:47:17.796Z DRIVER   one or more queues busy
+2024-12-04T07:47:17.803Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:47:17.805Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:47:17.814Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:47:17.817Z SERIAL « 0x0106013ba1a3a061                                                   (8 bytes)
+2024-12-04T07:47:17.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:47:17.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -95 dBm
+                                    channel 1: -93 dBm
+                                    channel 2: -96 dBm
+2024-12-04T07:47:17.830Z DRIVER   all queues idle
+2024-12-04T07:47:47.794Z DRIVER   one or more queues busy
+2024-12-04T07:47:47.798Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:47:47.799Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:47:47.804Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:47:47.806Z SERIAL « 0x0106013ba8ac9d5a                                                   (8 bytes)
+2024-12-04T07:47:47.807Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:47:47.810Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:47:47.813Z DRIVER   all queues idle
+2024-12-04T07:48:17.795Z DRIVER   one or more queues busy
+2024-12-04T07:48:17.799Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:48:17.800Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:48:17.804Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:48:17.806Z SERIAL « 0x0106013b9daf9d6c                                                   (8 bytes)
+2024-12-04T07:48:17.807Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:48:17.811Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:48:17.813Z DRIVER   all queues idle
+2024-12-04T07:48:47.798Z DRIVER   one or more queues busy
+2024-12-04T07:48:47.806Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:48:47.808Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:48:47.814Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:48:47.819Z SERIAL « 0x0106013b9cb19c72                                                   (8 bytes)
+2024-12-04T07:48:47.822Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:48:47.826Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -79 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:48:47.833Z DRIVER   all queues idle
+2024-12-04T07:49:17.799Z DRIVER   one or more queues busy
+2024-12-04T07:49:17.806Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:49:17.807Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:49:17.812Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:49:17.818Z SERIAL « 0x0106013b9baf9b6c                                                   (8 bytes)
+2024-12-04T07:49:17.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:49:17.823Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -101 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:49:17.828Z DRIVER   all queues idle
+2024-12-04T07:49:47.800Z DRIVER   one or more queues busy
+2024-12-04T07:49:47.807Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:49:47.809Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:49:47.814Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:49:47.818Z SERIAL « 0x0106013b9ba99c6d                                                   (8 bytes)
+2024-12-04T07:49:47.820Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:49:47.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -101 dBm
+                                    channel 1: -87 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:49:47.829Z DRIVER   all queues idle
+2024-12-04T07:50:17.800Z DRIVER   one or more queues busy
+2024-12-04T07:50:17.804Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:50:17.804Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:50:17.809Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:50:17.810Z SERIAL « 0x0106013b9dac9b69                                                   (8 bytes)
+2024-12-04T07:50:17.812Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:50:17.813Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:50:17.816Z DRIVER   all queues idle
+2024-12-04T07:50:47.800Z DRIVER   one or more queues busy
+2024-12-04T07:50:47.807Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:50:47.809Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:50:47.813Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:50:47.816Z SERIAL « 0x0106013ba99c996f                                                   (8 bytes)
+2024-12-04T07:50:47.817Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:50:47.822Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -87 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -103 dBm
+2024-12-04T07:50:47.826Z DRIVER   all queues idle
+2024-12-04T07:51:17.800Z DRIVER   one or more queues busy
+2024-12-04T07:51:17.803Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:51:17.803Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:51:17.808Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:51:17.810Z SERIAL « 0x0106013b9ea79e64                                                   (8 bytes)
+2024-12-04T07:51:17.811Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:51:17.813Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -89 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:51:17.815Z DRIVER   all queues idle
+2024-12-04T07:51:47.800Z DRIVER   one or more queues busy
+2024-12-04T07:51:47.803Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:51:47.804Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:51:47.808Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:51:47.812Z SERIAL « 0x0106013b9dae9d6d                                                   (8 bytes)
+2024-12-04T07:51:47.813Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:51:47.815Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -82 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:51:47.817Z DRIVER   all queues idle
+2024-12-04T07:52:17.803Z DRIVER   one or more queues busy
+2024-12-04T07:52:17.811Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:52:17.814Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:52:17.820Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:52:17.824Z SERIAL « 0x0106013b9cada052                                                   (8 bytes)
+2024-12-04T07:52:17.826Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:52:17.834Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -83 dBm
+                                    channel 2: -96 dBm
+2024-12-04T07:52:17.843Z DRIVER   all queues idle
+2024-12-04T07:52:47.801Z DRIVER   one or more queues busy
+2024-12-04T07:52:47.807Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:52:47.809Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:52:47.814Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:52:47.817Z SERIAL « 0x0106013b9cb19e70                                                   (8 bytes)
+2024-12-04T07:52:47.819Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:52:47.822Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -79 dBm
+                                    channel 2: -98 dBm
+2024-12-04T07:52:47.827Z DRIVER   all queues idle
+2024-12-04T07:53:17.802Z DRIVER   one or more queues busy
+2024-12-04T07:53:17.809Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:53:17.811Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:53:17.816Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:53:17.819Z SERIAL « 0x0106013b9daca052                                                   (8 bytes)
+2024-12-04T07:53:17.821Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:53:17.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -96 dBm
+2024-12-04T07:53:17.829Z DRIVER   all queues idle
+2024-12-04T07:53:47.801Z DRIVER   one or more queues busy
+2024-12-04T07:53:47.808Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:53:47.810Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:53:47.815Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:53:47.819Z SERIAL « 0x0106013b9cac9c6f                                                   (8 bytes)
+2024-12-04T07:53:47.821Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:53:47.825Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -100 dBm
+2024-12-04T07:53:47.831Z DRIVER   all queues idle
+2024-12-04T07:54:17.805Z DRIVER   one or more queues busy
+2024-12-04T07:54:17.812Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:54:17.813Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:54:17.819Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:54:17.823Z SERIAL « 0x0106013b9daea757                                                   (8 bytes)
+2024-12-04T07:54:17.826Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:54:17.829Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -82 dBm
+                                    channel 2: -89 dBm
+2024-12-04T07:54:17.833Z DRIVER   all queues idle
+2024-12-04T07:54:47.800Z DRIVER   one or more queues busy
+2024-12-04T07:54:47.812Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:54:47.814Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:54:47.819Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:54:47.823Z SERIAL « 0x0106013ba5a1985f                                                   (8 bytes)
+2024-12-04T07:54:47.825Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:54:47.828Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -91 dBm
+                                    channel 1: -95 dBm
+                                    channel 2: -104 dBm
+2024-12-04T07:54:47.834Z DRIVER   all queues idle
+2024-12-04T07:55:17.802Z DRIVER   one or more queues busy
+2024-12-04T07:55:17.810Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:55:17.811Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:55:17.820Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:55:17.824Z SERIAL « 0x0106013ba0aaa168                                                   (8 bytes)
+2024-12-04T07:55:17.827Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:55:17.830Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -96 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -95 dBm
+2024-12-04T07:55:17.836Z DRIVER   all queues idle
+2024-12-04T07:55:47.803Z DRIVER   one or more queues busy
+2024-12-04T07:55:47.810Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:55:47.813Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:55:47.818Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:55:47.822Z SERIAL « 0x0106013b9cb09d72                                                   (8 bytes)
+2024-12-04T07:55:47.829Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:55:47.833Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -80 dBm
+                                    channel 2: -99 dBm
+2024-12-04T07:55:47.839Z DRIVER   all queues idle
+2024-12-04T07:56:17.804Z DRIVER   one or more queues busy
+2024-12-04T07:56:17.811Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:56:17.813Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:56:17.818Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:56:17.822Z SERIAL « 0x0106013b9dac9b69                                                   (8 bytes)
+2024-12-04T07:56:17.824Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:56:17.832Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -101 dBm
+2024-12-04T07:56:17.837Z DRIVER   all queues idle
+2024-12-04T07:56:47.804Z DRIVER   one or more queues busy
+2024-12-04T07:56:47.808Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:56:47.809Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:56:47.813Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:56:47.815Z SERIAL « 0x0106013b9cb0a34c                                                   (8 bytes)
+2024-12-04T07:56:47.816Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:56:47.818Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -80 dBm
+                                    channel 2: -93 dBm
+2024-12-04T07:56:47.822Z DRIVER   all queues idle
+2024-12-04T07:57:17.807Z DRIVER   one or more queues busy
+2024-12-04T07:57:17.814Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:57:17.816Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:57:17.820Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:57:17.824Z SERIAL « 0x0106013b9db0a749                                                   (8 bytes)
+2024-12-04T07:57:17.826Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:57:17.830Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -80 dBm
+                                    channel 2: -89 dBm
+2024-12-04T07:57:17.839Z DRIVER   all queues idle
+2024-12-04T07:57:47.809Z DRIVER   one or more queues busy
+2024-12-04T07:57:47.817Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:57:47.818Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:57:47.830Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:57:47.832Z SERIAL « 0x0106013ba1a99f54                                                   (8 bytes)
+2024-12-04T07:57:47.837Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:57:47.840Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -95 dBm
+                                    channel 1: -87 dBm
+                                    channel 2: -97 dBm
+2024-12-04T07:57:47.846Z DRIVER   all queues idle
+2024-12-04T07:58:17.807Z DRIVER   one or more queues busy
+2024-12-04T07:58:17.811Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:58:17.812Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:58:17.817Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:58:17.819Z SERIAL « 0x0106013ba0aca26d                                                   (8 bytes)
+2024-12-04T07:58:17.821Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:58:17.823Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -96 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -94 dBm
+2024-12-04T07:58:17.826Z DRIVER   all queues idle
+2024-12-04T07:58:47.809Z DRIVER   one or more queues busy
+2024-12-04T07:58:47.817Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:58:47.818Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:58:47.823Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:58:47.827Z SERIAL « 0x0106013b9cada153                                                   (8 bytes)
+2024-12-04T07:58:47.829Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:58:47.834Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -83 dBm
+                                    channel 2: -95 dBm
+2024-12-04T07:58:47.839Z DRIVER   all queues idle
+2024-12-04T07:59:17.815Z DRIVER   one or more queues busy
+2024-12-04T07:59:17.822Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:59:17.823Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:59:17.828Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:59:17.832Z SERIAL « 0x0106013b9faca555                                                   (8 bytes)
+2024-12-04T07:59:17.834Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:59:17.838Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -97 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -91 dBm
+2024-12-04T07:59:17.843Z DRIVER   all queues idle
+2024-12-04T07:59:47.811Z DRIVER   one or more queues busy
+2024-12-04T07:59:47.822Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T07:59:47.824Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T07:59:47.828Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T07:59:47.832Z SERIAL « 0x0106013b9da9a354                                                   (8 bytes)
+2024-12-04T07:59:47.835Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T07:59:47.839Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -87 dBm
+                                    channel 2: -93 dBm
+2024-12-04T07:59:47.845Z DRIVER   all queues idle
+2024-12-04T08:00:17.810Z DRIVER   one or more queues busy
+2024-12-04T08:00:17.814Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:00:17.815Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:00:17.820Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:00:17.825Z SERIAL « 0x0106013b9dafa352                                                   (8 bytes)
+2024-12-04T08:00:17.827Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:00:17.829Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -93 dBm
+2024-12-04T08:00:17.833Z DRIVER   all queues idle
+2024-12-04T08:00:47.810Z DRIVER   one or more queues busy
+2024-12-04T08:00:47.813Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:00:47.814Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:00:47.818Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:00:47.820Z SERIAL « 0x0106013b9eac9c6d                                                   (8 bytes)
+2024-12-04T08:00:47.822Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:00:47.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -100 dBm
+2024-12-04T08:00:47.829Z DRIVER   all queues idle
+2024-12-04T08:01:17.813Z DRIVER   one or more queues busy
+2024-12-04T08:01:17.820Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:01:17.822Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:01:17.827Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:01:17.830Z SERIAL « 0x0106013b9caba256                                                   (8 bytes)
+2024-12-04T08:01:17.833Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:01:17.836Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -85 dBm
+                                    channel 2: -94 dBm
+2024-12-04T08:01:17.842Z DRIVER   all queues idle
+2024-12-04T08:01:47.811Z DRIVER   one or more queues busy
+2024-12-04T08:01:47.816Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:01:47.817Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:01:47.822Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:01:47.824Z SERIAL « 0x0106013b9caaa356                                                   (8 bytes)
+2024-12-04T08:01:47.826Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:01:47.827Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -93 dBm
+2024-12-04T08:01:47.830Z DRIVER   all queues idle
+2024-12-04T08:02:17.812Z DRIVER   one or more queues busy
+2024-12-04T08:02:17.814Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:02:17.815Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:02:17.820Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:02:17.821Z SERIAL « 0x0106013b9baaa153                                                   (8 bytes)
+2024-12-04T08:02:17.822Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:02:17.824Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -101 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -95 dBm
+2024-12-04T08:02:17.827Z DRIVER   all queues idle
+2024-12-04T08:02:47.812Z DRIVER   one or more queues busy
+2024-12-04T08:02:47.815Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:02:47.816Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:02:47.821Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:02:47.822Z SERIAL « 0x0106013ba4a4a162                                                   (8 bytes)
+2024-12-04T08:02:47.823Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:02:47.825Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -92 dBm
+                                    channel 2: -95 dBm
+2024-12-04T08:02:47.828Z DRIVER   all queues idle
+2024-12-04T08:03:17.815Z DRIVER   one or more queues busy
+2024-12-04T08:03:17.821Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:03:17.823Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:03:17.830Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:03:17.833Z SERIAL « 0x0106013ba2a89e57                                                   (8 bytes)
+2024-12-04T08:03:17.835Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:03:17.839Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -94 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -98 dBm
+2024-12-04T08:03:17.845Z DRIVER   all queues idle
+2024-12-04T08:03:47.815Z DRIVER   one or more queues busy
+2024-12-04T08:03:47.822Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:03:47.824Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:03:47.829Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:03:47.832Z SERIAL « 0x0106013b9db09d73                                                   (8 bytes)
+2024-12-04T08:03:47.834Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:03:47.839Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -80 dBm
+                                    channel 2: -99 dBm
+2024-12-04T08:03:47.849Z DRIVER   all queues idle
+2024-12-04T08:04:17.814Z DRIVER   one or more queues busy
+2024-12-04T08:04:17.817Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:04:17.818Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:04:17.822Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:04:17.824Z SERIAL « 0x0106013b9da9a057                                                   (8 bytes)
+2024-12-04T08:04:17.825Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:04:17.827Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -87 dBm
+                                    channel 2: -96 dBm
+2024-12-04T08:04:17.831Z DRIVER   all queues idle
+2024-12-04T08:04:47.815Z DRIVER   one or more queues busy
+2024-12-04T08:04:47.818Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:04:47.819Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:04:47.825Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:04:47.827Z SERIAL « 0x0106013b9baf9d6a                                                   (8 bytes)
+2024-12-04T08:04:47.829Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:04:47.831Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -101 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -99 dBm
+2024-12-04T08:04:47.835Z DRIVER   all queues idle
+2024-12-04T08:05:17.814Z DRIVER   one or more queues busy
+2024-12-04T08:05:17.817Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:05:17.818Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:05:17.822Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:05:17.824Z SERIAL « 0x0106013b9aaf9a6c                                                   (8 bytes)
+2024-12-04T08:05:17.825Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:05:17.827Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -102 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:05:17.829Z DRIVER   all queues idle
+2024-12-04T08:05:47.814Z DRIVER   one or more queues busy
+2024-12-04T08:05:47.817Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:05:47.818Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:05:47.823Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:05:47.825Z SERIAL « 0x0106013b9eaea350                                                   (8 bytes)
+2024-12-04T08:05:47.826Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:05:47.828Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -82 dBm
+                                    channel 2: -93 dBm
+2024-12-04T08:05:47.832Z DRIVER   all queues idle
+2024-12-04T08:06:17.814Z DRIVER   one or more queues busy
+2024-12-04T08:06:17.818Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:06:17.819Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:06:17.825Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:06:17.827Z SERIAL « 0x0106013b9fafa251                                                   (8 bytes)
+2024-12-04T08:06:17.830Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:06:17.832Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -97 dBm
+                                    channel 1: -81 dBm
+                                    channel 2: -94 dBm
+2024-12-04T08:06:17.837Z DRIVER   all queues idle
+2024-12-04T08:06:47.818Z DRIVER   one or more queues busy
+2024-12-04T08:06:47.824Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:06:47.826Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:06:47.836Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:06:47.839Z SERIAL « 0x0106013b9eaba650                                                   (8 bytes)
+2024-12-04T08:06:47.842Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:06:47.845Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -85 dBm
+                                    channel 2: -90 dBm
+2024-12-04T08:06:47.850Z DRIVER   all queues idle
+2024-12-04T08:07:17.819Z DRIVER   one or more queues busy
+2024-12-04T08:07:17.826Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:07:17.828Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:07:17.833Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:07:17.836Z SERIAL « 0x0106013b9da89c6a                                                   (8 bytes)
+2024-12-04T08:07:17.838Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:07:17.842Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -100 dBm
+2024-12-04T08:07:17.848Z DRIVER   all queues idle
+2024-12-04T08:07:47.821Z DRIVER   one or more queues busy
+2024-12-04T08:07:47.824Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:07:47.825Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:07:47.829Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:07:47.831Z SERIAL « 0x0106013b9eb0a34e                                                   (8 bytes)
+2024-12-04T08:07:47.832Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:07:47.834Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -98 dBm
+                                    channel 1: -80 dBm
+                                    channel 2: -93 dBm
+2024-12-04T08:07:47.837Z DRIVER   all queues idle
+2024-12-04T08:08:17.822Z DRIVER   one or more queues busy
+2024-12-04T08:08:17.832Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:08:17.834Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:08:17.839Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:08:17.842Z SERIAL « 0x0106013b9daca557                                                   (8 bytes)
+2024-12-04T08:08:17.845Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:08:17.848Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -99 dBm
+                                    channel 1: -84 dBm
+                                    channel 2: -91 dBm
+2024-12-04T08:08:17.853Z DRIVER   all queues idle
+2024-12-04T08:08:47.824Z DRIVER   one or more queues busy
+2024-12-04T08:08:47.830Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:08:47.836Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:08:47.841Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:08:47.844Z SERIAL « 0x0106013ba89e9e6b                                                   (8 bytes)
+2024-12-04T08:08:47.847Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:08:47.850Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -88 dBm
+                                    channel 1: -98 dBm
+                                    channel 2: -98 dBm
+2024-12-04T08:08:47.855Z DRIVER   all queues idle
+2024-12-04T08:08:55.141Z SERIAL « 0x011200a8000106097105000000ff0d000000d71a                          (20 bytes)
+2024-12-04T08:08:55.149Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:08:55.156Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T08:08:55.163Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T08:08:55.175Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -41 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   13
+                                      notification status: 255
+                                      notification state:  idle
+2024-12-04T08:09:17.825Z DRIVER   one or more queues busy
+2024-12-04T08:09:17.832Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:09:17.834Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:09:17.839Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:09:17.842Z SERIAL « 0x0106013ba798966a                                                   (8 bytes)
+2024-12-04T08:09:17.844Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:09:17.847Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -104 dBm
+                                    channel 2: -106 dBm
+2024-12-04T08:09:17.855Z DRIVER   all queues idle
+2024-12-04T08:09:47.825Z DRIVER   one or more queues busy
+2024-12-04T08:09:47.828Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:09:47.829Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:09:47.833Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:09:47.835Z SERIAL « 0x0106013ba4a89f50                                                   (8 bytes)
+2024-12-04T08:09:47.836Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:09:47.838Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -97 dBm
+2024-12-04T08:09:47.841Z DRIVER   all queues idle
+2024-12-04T08:09:55.166Z SERIAL « 0x010f00a8000106063105012200d100dc43                                (17 bytes)
+2024-12-04T08:09:55.171Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:09:55.176Z CNTRLR   [Node 006] [Multilevel Sensor] Air temperature: metadata updated  [Endpoint 0]
+2024-12-04T08:09:55.179Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Air temperature: 21.2 => 20.9  [Endpoint 0]
+2024-12-04T08:09:55.181Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -36 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Air temperature
+                                      scale:       Celsius
+                                      value:       20.9
+2024-12-04T08:09:55.185Z SERIAL « 0x010f00a80001060631050502002600dc90                                (17 bytes)
+2024-12-04T08:09:55.186Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:09:55.189Z CNTRLR   [Node 006] [Multilevel Sensor] Humidity: metadata updated         [Endpoint 0]
+2024-12-04T08:09:55.192Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Humidity: 37 => 38             [Endpoint 0]
+2024-12-04T08:09:55.194Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -36 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Humidity
+                                      scale:       Percentage value
+                                      value:       38
+2024-12-04T08:09:55.202Z SERIAL « 0x011300a80001060a7105000000ff0d06010100dc15                        (21 bytes)
+2024-12-04T08:09:55.204Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:09:55.206Z CNTRLR   [Node 006] [~] [Notification] alarmType: 0 => 0                   [Endpoint 0]
+2024-12-04T08:09:55.208Z CNTRLR   [Node 006] [~] [Notification] alarmLevel: 0 => 0                  [Endpoint 0]
+2024-12-04T08:09:55.212Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -36 dBm
+                                  └─[NotificationCCReport]
+                                      notification type:   Home Health
+                                      notification status: 255
+                                      notification state:  Volatile Organic Compound level
+                                      state parameters:    Clean
+2024-12-04T08:09:55.213Z CNTRLR   [Node 006] [~] [Notification] Home Health[VOC level status]: 1 => [Endpoint 0]
+                                   1
+2024-12-04T08:10:17.826Z DRIVER   one or more queues busy
+2024-12-04T08:10:17.829Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:10:17.830Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:10:17.834Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:10:17.836Z SERIAL « 0x0106013ba4a89f50                                                   (8 bytes)
+2024-12-04T08:10:17.837Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:10:17.839Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -97 dBm
+2024-12-04T08:10:17.841Z DRIVER   all queues idle
+2024-12-04T08:10:47.825Z DRIVER   one or more queues busy
+2024-12-04T08:10:47.829Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:10:47.829Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:10:47.834Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:10:47.835Z SERIAL « 0x0106013ba7a09c58                                                   (8 bytes)
+2024-12-04T08:10:47.837Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:10:47.838Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -89 dBm
+                                    channel 1: -96 dBm
+                                    channel 2: -100 dBm
+2024-12-04T08:10:47.841Z DRIVER   all queues idle
+2024-12-04T08:10:55.166Z SERIAL « 0x011100a800010608310511040000028300d73e                            (19 bytes)
+2024-12-04T08:10:55.170Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:10:55.175Z CNTRLR   [Node 006] [Multilevel Sensor] Carbon dioxide (CO₂) level: metada [Endpoint 0]
+                                  ta updated
+2024-12-04T08:10:55.179Z CNTRLR   [Node 006] [~] [Multilevel Sensor] Carbon dioxide (CO₂) level: 53 [Endpoint 0]
+                                  9 => 643
+2024-12-04T08:10:55.182Z DRIVER « [Node 006] [REQ] [BridgeApplicationCommand]
+                                  │ RSSI: -41 dBm
+                                  └─[MultilevelSensorCCReport]
+                                      sensor type: Carbon dioxide (CO₂) level
+                                      scale:       Parts/million
+                                      value:       643
+2024-12-04T08:11:17.827Z DRIVER   one or more queues busy
+2024-12-04T08:11:17.833Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:11:17.834Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:11:17.839Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:11:17.842Z SERIAL « 0x0106013ba49e976e                                                   (8 bytes)
+2024-12-04T08:11:17.844Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:11:17.847Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -98 dBm
+                                    channel 2: -105 dBm
+2024-12-04T08:11:17.852Z DRIVER   all queues idle
+2024-12-04T08:11:47.827Z DRIVER   one or more queues busy
+2024-12-04T08:11:47.836Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:11:47.838Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:11:47.844Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:11:47.847Z SERIAL « 0x0106013baaa09a53                                                   (8 bytes)
+2024-12-04T08:11:47.850Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:11:47.853Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -86 dBm
+                                    channel 1: -96 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:11:47.857Z DRIVER   all queues idle
+2024-12-04T08:12:17.825Z DRIVER   one or more queues busy
+2024-12-04T08:12:17.829Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:12:17.830Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:12:17.835Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:12:17.837Z SERIAL « 0x0106013bac9b9a6e                                                   (8 bytes)
+2024-12-04T08:12:17.838Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:12:17.840Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -84 dBm
+                                    channel 1: -101 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:12:17.842Z DRIVER   all queues idle
+2024-12-04T08:12:47.825Z DRIVER   one or more queues busy
+2024-12-04T08:12:47.828Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:12:47.829Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:12:47.834Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:12:47.835Z SERIAL « 0x0106013bab9c9a6e                                                   (8 bytes)
+2024-12-04T08:12:47.836Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:12:47.838Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -100 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:12:47.840Z DRIVER   all queues idle
+2024-12-04T08:13:17.825Z DRIVER   one or more queues busy
+2024-12-04T08:13:17.828Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:13:17.829Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:13:17.834Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:13:17.835Z SERIAL « 0x0106013b9faa9d6b                                                   (8 bytes)
+2024-12-04T08:13:17.836Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:13:17.838Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -97 dBm
+                                    channel 1: -86 dBm
+                                    channel 2: -99 dBm
+2024-12-04T08:13:17.841Z DRIVER   all queues idle
+2024-12-04T08:13:47.827Z DRIVER   one or more queues busy
+2024-12-04T08:13:47.833Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:13:47.835Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:13:47.844Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:13:47.847Z SERIAL « 0x0106013ba1a8a06a                                                   (8 bytes)
+2024-12-04T08:13:47.849Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:13:47.853Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -95 dBm
+                                    channel 1: -88 dBm
+                                    channel 2: -96 dBm
+2024-12-04T08:13:47.858Z DRIVER   all queues idle
+2024-12-04T08:14:17.827Z DRIVER   one or more queues busy
+2024-12-04T08:14:17.833Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:14:17.834Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:14:17.839Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:14:17.842Z SERIAL « 0x0106013b9caba256                                                   (8 bytes)
+2024-12-04T08:14:17.844Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:14:17.848Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -100 dBm
+                                    channel 1: -85 dBm
+                                    channel 2: -94 dBm
+2024-12-04T08:14:17.857Z DRIVER   all queues idle
+2024-12-04T08:14:47.827Z DRIVER   one or more queues busy
+2024-12-04T08:14:47.833Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:14:47.835Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:14:47.839Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:14:47.842Z SERIAL « 0x0106013ba4a79d5d                                                   (8 bytes)
+2024-12-04T08:14:47.844Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:14:47.846Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -92 dBm
+                                    channel 1: -89 dBm
+                                    channel 2: -99 dBm
+2024-12-04T08:14:47.854Z DRIVER   all queues idle
+2024-12-04T08:15:17.826Z DRIVER   one or more queues busy
+2024-12-04T08:15:17.829Z SERIAL » 0x0103003bc7                                                         (5 bytes)
+2024-12-04T08:15:17.830Z DRIVER » [REQ] [GetBackgroundRSSI]
+2024-12-04T08:15:17.834Z SERIAL « [ACK]                                                                   (0x06)
+2024-12-04T08:15:17.836Z SERIAL « 0x0106013bab9d9a6f                                                   (8 bytes)
+2024-12-04T08:15:17.837Z SERIAL » [ACK]                                                                   (0x06)
+2024-12-04T08:15:17.841Z DRIVER « [RES] [GetBackgroundRSSI]
+                                    channel 0: -85 dBm
+                                    channel 1: -99 dBm
+                                    channel 2: -102 dBm
+2024-12-04T08:15:17.843Z DRIVER   all queues idle

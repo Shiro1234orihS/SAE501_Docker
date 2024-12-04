@@ -1,0 +1,33 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+influxdb:
+  api_version: 2
+  host: influxdb
+  port: 8086
+  token: "khzRozF_2KQaxcE7b0dU0SuR17Did9cclTTvcFv6ZCLhb_IFhddl8igzCs3YGQgUQj1FNLHcwNqvAGsEvn7W_g=="
+  organization: "SAE de Zinzin"
+  bucket: "SAEdeZinzin"
+  ssl: false  # Désactive SSL
+  verify_ssl: false  # Ignore la validation des certificats SSL
+  default_measurement: state
+  include:
+    domains:
+      - sensor  # Inclut tous les capteurs, y compris Z-Wave
+    entities:
+      - sensor.zwave_temperature  # Exemple : capteur de température Z-Wave
+      - sensor.zwave_humidity     # Exemple : capteur d'humidité Z-Wave
+      - sensor.zwave_motion       # Exemple : capteur de mouvement Z-Wave
+  exclude:
+    domains:
+      - automation  # Exclut les automatisations
+      - script      # Exclut les scripts
+

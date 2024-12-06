@@ -14,6 +14,16 @@
             "date": 1733296188548,
             "name": "/usr/src/app/store/logs/zwavejs_2024-12-04.log",
             "hash": "0b477b0032cd82d87c689e0f07198c42a9868e5a7113a49dc4b410c6686b838c"
+        },
+        {
+            "date": 1733384362379,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-12-05.log",
+            "hash": "79d2635b40d618903be4d42725fcb41d0720daea93e280943eb5ea87ff4ff667"
+        },
+        {
+            "date": 1733468595026,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-12-06.log",
+            "hash": "3cc9928df142bca30c58346f67100c98977c6d3039c767b9c4f9d54f547bb604"
         }
     ],
     "hashType": "sha256"

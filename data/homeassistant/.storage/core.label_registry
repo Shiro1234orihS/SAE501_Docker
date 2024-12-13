@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.label_registry",
+  "data": {
+    "labels": [
+      {
+        "color": null,
+        "description": null,
+        "icon": null,
+        "label_id": "1",
+        "name": "1",
+        "created_at": "2024-12-12T13:09:01.833135+00:00",
+        "modified_at": "2024-12-12T13:09:01.833158+00:00"
+      },
+      {
+        "color": null,
+        "description": null,
+        "icon": null,
+        "label_id": "sensor_1",
+        "name": "sensor_1",
+        "created_at": "2024-12-12T13:15:38.888057+00:00",
+        "modified_at": "2024-12-12T13:15:38.888081+00:00"
+      }
+    ]
+  }
+}

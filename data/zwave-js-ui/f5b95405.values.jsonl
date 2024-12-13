@@ -1,9 +1,9 @@
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1731079490079}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1731079490084}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1731079490086}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1731079490090}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1731079490095}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1731079490099}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734016204067}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734016204071}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734016204076}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734016204079}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734016204085}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734016204088}
 {"k":"uuid","v":"c51ab6a150230d373f6677c8442a0eec47a18af6088e6c9085ff94cf8200504a","ts":1731076770263}
 {"k":"{\"nodeId\":39,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":1027,"ts":1731077044138}
 {"k":"{\"nodeId\":39,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":3,"ts":1731077044145}

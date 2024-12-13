@@ -18,10 +18,12 @@ influxdb:
   bucket: "SAEdeZinzin"
   ssl: false  # Désactive SSL
   verify_ssl: false  # Ignore la validation des certificats SSL
-  default_measurement: state
+
+  default_measurement: value 
   include:
     domains:
-      - sensor  # Inclut tous les capteurs, y compris Z-Wave
+      - sensor
+      - button  # Inclut tous les capteurs, y compris Z-Wave
     entities:
       - sensor.zwave_temperature  # Exemple : capteur de température Z-Wave
       - sensor.zwave_humidity     # Exemple : capteur d'humidité Z-Wave
@@ -31,3 +33,8 @@ influxdb:
       - automation  # Exclut les automatisations
       - script      # Exclut les scripts
 
+  tags_attributes:
+    - friendly_name
+    - device_id
+    - unique_id
+    - friendly_name_str

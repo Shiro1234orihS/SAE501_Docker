@@ -152,3 +152,33 @@
 {"k":"node.39.lastSeen","v":1731079024473}
 {"k":"node.39.lastSeen","v":1731079036944}
 {"k":"node.39.lastSeen","v":1731079078548}
+{"k":"node.40.isListening","v":true}
+{"k":"node.40.isFrequentListening","v":false}
+{"k":"node.40.isRouting","v":true}
+{"k":"node.40.supportedDataRates","v":[40000,100000]}
+{"k":"node.40.protocolVersion","v":3}
+{"k":"node.40.nodeType","v":"End Node"}
+{"k":"node.40.supportsSecurity","v":false}
+{"k":"node.40.supportsBeaming","v":true}
+{"k":"node.40.deviceClass","v":{"basic":4,"generic":33,"specific":1}}
+{"k":"node.40.interviewStage","v":"ProtocolInfo"}
+{"k":"node.41.isListening","v":true}
+{"k":"node.41.isFrequentListening","v":false}
+{"k":"node.41.isRouting","v":true}
+{"k":"node.41.supportedDataRates","v":[40000,100000]}
+{"k":"node.41.protocolVersion","v":3}
+{"k":"node.41.nodeType","v":"End Node"}
+{"k":"node.41.supportsSecurity","v":false}
+{"k":"node.41.supportsBeaming","v":true}
+{"k":"node.41.deviceClass","v":{"basic":4,"generic":17,"specific":1}}
+{"k":"node.41.interviewStage","v":"ProtocolInfo"}
+{"k":"node.42.isListening","v":true}
+{"k":"node.42.isFrequentListening","v":false}
+{"k":"node.42.isRouting","v":true}
+{"k":"node.42.supportedDataRates","v":[40000,100000]}
+{"k":"node.42.protocolVersion","v":3}
+{"k":"node.42.nodeType","v":"End Node"}
+{"k":"node.42.supportsSecurity","v":false}
+{"k":"node.42.supportsBeaming","v":true}
+{"k":"node.42.deviceClass","v":{"basic":4,"generic":33,"specific":1}}
+{"k":"node.42.interviewStage","v":"ProtocolInfo"}

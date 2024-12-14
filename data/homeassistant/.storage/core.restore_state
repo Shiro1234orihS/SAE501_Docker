@@ -4,68 +4,80 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.sae_de_zinzin","state":"unknown","attributes":{"editable":true,"id":"sae_de_zinzin","device_trackers":[],"user_id":"51f694c4e12f4b2fbff06a78c5d286a6","friendly_name":"SAE de Zinzin"},"last_changed":"2024-12-13T12:19:41.854719+00:00","last_reported":"2024-12-13T12:19:59.466753+00:00","last_updated":"2024-12-13T12:19:59.466753+00:00","context":{"id":"01JEZZC8VA56G7JK53ESEP02MC","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.sae_de_zinzin","state":"unknown","attributes":{"editable":true,"id":"sae_de_zinzin","device_trackers":[],"user_id":"51f694c4e12f4b2fbff06a78c5d286a6","friendly_name":"SAE de Zinzin"},"last_changed":"2024-12-13T15:00:38.392603+00:00","last_reported":"2024-12-13T15:00:51.003472+00:00","last_updated":"2024-12-13T15:00:51.003472+00:00","context":{"id":"01JF08JT5VG5D9WHRQ3S2ACSCK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-13T12:19:49.305178+00:00","last_reported":"2024-12-13T12:19:49.305178+00:00","last_updated":"2024-12-13T12:19:49.305178+00:00","context":{"id":"01JEZZBYXSA2ABHFC29RA9BW54","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-13T15:00:45.882989+00:00","last_reported":"2024-12-13T15:00:45.882989+00:00","last_updated":"2024-12-13T15:00:45.882989+00:00","context":{"id":"01JF08JN5TP1EC7GBB0EJF6S0K","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-13T12:19:59.048811+00:00","last_reported":"2024-12-13T12:19:59.048811+00:00","last_updated":"2024-12-13T12:19:59.048811+00:00","context":{"id":"01JEZZC8E8Q5QW3PB53KVXSEK3","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-13T15:00:50.489019+00:00","last_reported":"2024-12-13T15:00:50.489019+00:00","last_updated":"2024-12-13T15:00:50.489019+00:00","context":{"id":"01JF08JSNS5JFB7QZEZ8WYMRRP","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.node_3_ping","state":"unknown","attributes":{"friendly_name":"Node 3 Ping"},"last_changed":"2024-12-13T12:19:59.110469+00:00","last_reported":"2024-12-13T12:19:59.110469+00:00","last_updated":"2024-12-13T12:19:59.110469+00:00","context":{"id":"01JEZZC8G66HKQ6VATJ9G6JD9Y","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_3_ping","state":"unknown","attributes":{"friendly_name":"Node 3 Ping"},"last_changed":"2024-12-13T15:00:50.630025+00:00","last_reported":"2024-12-13T15:00:50.630025+00:00","last_updated":"2024-12-13T15:00:50.630025+00:00","context":{"id":"01JF08JST64JM7ENS5GZPDX4FT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.node_4_ping","state":"unknown","attributes":{"friendly_name":"Node 4 Ping"},"last_changed":"2024-12-13T12:19:59.117089+00:00","last_reported":"2024-12-13T12:19:59.117089+00:00","last_updated":"2024-12-13T12:19:59.117089+00:00","context":{"id":"01JEZZC8GDQVZDN3AAABNS15GG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_4_ping","state":"unknown","attributes":{"friendly_name":"Node 4 Ping"},"last_changed":"2024-12-13T15:00:50.636854+00:00","last_reported":"2024-12-13T15:00:50.636854+00:00","last_updated":"2024-12-13T15:00:50.636854+00:00","context":{"id":"01JF08JSTCESZTDYE09FR2V740","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.z_ping","state":"unknown","attributes":{"friendly_name":"Z Ping"},"last_changed":"2024-12-13T12:19:59.123202+00:00","last_reported":"2024-12-13T12:19:59.123202+00:00","last_updated":"2024-12-13T12:19:59.123202+00:00","context":{"id":"01JEZZC8GK8F5J0JC3GYJ7Y4GV","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.z_ping","state":"unknown","attributes":{"friendly_name":"capteur Ping"},"last_changed":"2024-12-13T15:00:50.643842+00:00","last_reported":"2024-12-13T15:03:58.641334+00:00","last_updated":"2024-12-13T15:03:58.641334+00:00","context":{"id":"01JF08RHDHDKNDWCNE0ZWKH65M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.abus_security_center_bulb_ping","state":"unknown","attributes":{"friendly_name":"ABUS Security Center Bulb Ping"},"last_changed":"2024-12-13T12:19:59.139249+00:00","last_reported":"2024-12-13T12:19:59.139249+00:00","last_updated":"2024-12-13T12:19:59.139249+00:00","context":{"id":"01JEZZC8H3XRYGYPDCE6TPNWR9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.air_quality_sensor_ping","state":"2024-12-13T12:46:58.497178+00:00","attributes":{"friendly_name":"capteur_1 Ping"},"last_changed":"2024-12-13T15:00:50.662731+00:00","last_reported":"2024-12-13T15:03:25.697342+00:00","last_updated":"2024-12-13T15:03:25.697342+00:00","context":{"id":"01JF08QH81ZHYW8JNQN3AWE1RN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.air_quality_sensor_ping","state":"2024-12-12T15:36:39.016962+00:00","attributes":{"friendly_name":"Air Quality Sensor Ping"},"last_changed":"2024-12-13T12:19:59.145171+00:00","last_reported":"2024-12-13T12:19:59.145171+00:00","last_updated":"2024-12-13T12:19:59.145171+00:00","context":{"id":"01JEZZC8H99TR72MGYSTRKXH8M","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_9_ping","state":"unknown","attributes":{"friendly_name":"Air Quality Sensor Ping"},"last_changed":"2024-12-13T15:00:50.673626+00:00","last_reported":"2024-12-13T15:00:50.673626+00:00","last_updated":"2024-12-13T15:00:50.673626+00:00","context":{"id":"01JF08JSVHK33YZF6VXF512F8Z","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.node_9_ping","state":"unknown","attributes":{"friendly_name":"Air Quality Sensor Ping"},"last_changed":"2024-12-13T12:19:59.151399+00:00","last_reported":"2024-12-13T12:19:59.151399+00:00","last_updated":"2024-12-13T12:19:59.151399+00:00","context":{"id":"01JEZZC8HFF959RQ7TNECYZ705","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_10_ping","state":"unknown","attributes":{"friendly_name":"capteur_2 Ping"},"last_changed":"2024-12-13T15:00:50.682042+00:00","last_reported":"2024-12-13T15:03:35.431935+00:00","last_updated":"2024-12-13T15:03:35.431935+00:00","context":{"id":"01JF08QTR7TH89QBGS4G3K50ZF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"button.node_10_ping","state":"unknown","attributes":{"friendly_name":"Air Quality Sensor Ping"},"last_changed":"2024-12-13T12:19:59.157857+00:00","last_reported":"2024-12-13T12:19:59.157857+00:00","last_updated":"2024-12-13T12:19:59.157857+00:00","context":{"id":"01JEZZC8HN8CRR0XB4RH0MYC32","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_12_ping","state":"unknown","attributes":{"friendly_name":"Lampe Ping"},"last_changed":"2024-12-13T15:00:50.700359+00:00","last_reported":"2024-12-13T15:00:50.700359+00:00","last_updated":"2024-12-13T15:00:50.700359+00:00","context":{"id":"01JF08JSWCMFCV619NT5B66ZT4","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"update.z_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Z Firmware","supported_features":21},"last_changed":"2024-12-13T12:19:59.438025+00:00","last_reported":"2024-12-13T12:19:59.438025+00:00","last_updated":"2024-12-13T12:19:59.438025+00:00","context":{"id":"01JEZZC8TED0QE7EBN1Y2JK7A9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.abus_security_center_bulb_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2.23","in_progress":false,"latest_version":"2.23","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Lampe Firmware","supported_features":21},"last_changed":"2024-12-13T15:00:50.969578+00:00","last_reported":"2024-12-13T15:00:50.969578+00:00","last_updated":"2024-12-13T15:00:50.969578+00:00","context":{"id":"01JF08JT4SD1941MHC6M2GVK95","parent_id":null,"user_id":null}},
       "extra_data": {
         "latest_version_firmware": null
       },
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
     },
     {
-      "state": {"entity_id":"update.air_quality_sensor_firmware_2","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Air Quality Sensor Firmware","supported_features":21},"last_changed":"2024-12-13T12:19:59.440692+00:00","last_reported":"2024-12-13T12:19:59.440692+00:00","last_updated":"2024-12-13T12:19:59.440692+00:00","context":{"id":"01JEZZC8TGXR6B1GQWKQEQ78DZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.z_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"capteur Firmware","supported_features":21},"last_changed":"2024-12-13T15:00:50.974340+00:00","last_reported":"2024-12-13T15:03:58.645493+00:00","last_updated":"2024-12-13T15:03:58.645493+00:00","context":{"id":"01JF08RHDN5Y9X6C0Y8NNCHCJV","parent_id":null,"user_id":null}},
       "extra_data": {
         "latest_version_firmware": null
       },
-      "last_seen": "2024-12-13T12:29:05.048067+00:00"
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
+    },
+    {
+      "state": {"entity_id":"update.air_quality_sensor_firmware_2","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"capteur_2 Firmware","supported_features":21},"last_changed":"2024-12-13T15:00:50.976579+00:00","last_reported":"2024-12-13T15:03:35.433447+00:00","last_updated":"2024-12-13T15:03:35.433447+00:00","context":{"id":"01JF08QTR9JN10G7S4K2RG6FDB","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "latest_version_firmware": null
+      },
+      "last_seen": "2024-12-13T15:38:46.336475+00:00"
+    },
+    {
+      "state": {"entity_id":"button.abus_security_center_bulb_ping","state":"unknown","attributes":{"friendly_name":"ABUS Security Center Bulb Ping"},"last_changed":"2024-12-13T12:37:34.153156+00:00","last_reported":"2024-12-13T12:37:34.153156+00:00","last_updated":"2024-12-13T12:37:34.153156+00:00","context":{"id":"01JF00CET9JNEQBV0F7AQJH3HE","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-13T12:48:57.673733+00:00"
     },
     {
       "state": {"entity_id":"update.air_quality_sensor_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Air Quality Sensor Firmware","supported_features":21},"last_changed":"2024-12-12T15:36:18.914582+00:00","last_reported":"2024-12-12T15:36:18.914582+00:00","last_updated":"2024-12-12T15:36:18.914582+00:00","context":{"id":"01JEXR7172NJZ607Z3TA4E3MDX","parent_id":null,"user_id":null}},

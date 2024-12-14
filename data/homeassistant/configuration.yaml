@@ -10,6 +10,7 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 
 influxdb:
+  customize: !include customize.yaml
   api_version: 2
   host: influxdb
   port: 8086
@@ -23,18 +24,22 @@ influxdb:
   include:
     domains:
       - sensor
-      - button  # Inclut tous les capteurs, y compris Z-Wave
+      - button
+      - light  # <--- Ajoutez cette ligne pour inclure les lampes Z-Wave
+      - switch  # <--- Ajoutez cette ligne si la lampe est configurée comme un switch
     entities:
-      - sensor.zwave_temperature  # Exemple : capteur de température Z-Wave
-      - sensor.zwave_humidity     # Exemple : capteur d'humidité Z-Wave
-      - sensor.zwave_motion       # Exemple : capteur de mouvement Z-Wave
+      - sensor.zwave_temperature
+      - sensor.zwave_humidity
+      - sensor.zwave_motion
+      - light.zwave_lampe_salon
   exclude:
     domains:
-      - automation  # Exclut les automatisations
-      - script      # Exclut les scripts
+      - automation
+      - script
 
   tags_attributes:
     - friendly_name
     - device_id
     - unique_id
     - friendly_name_str
+    - area_id

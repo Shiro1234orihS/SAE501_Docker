@@ -1,9 +1,9 @@
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734092383046}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734092383049}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734092383053}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734092383057}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734092383061}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734092383065}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734102039680}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734102039684}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734102039686}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734102039689}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734102039694}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734102039698}
 {"k":"uuid","v":"fa7dd663e143e6d83dbff279b590a78ad040573dd145531f3d163209211cbe69","ts":1731073290155}
 {"k":"{\"nodeId\":6,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":328,"ts":1732270674849}
 {"k":"{\"nodeId\":6,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":5,"ts":1732270674856}
@@ -31,8 +31,8 @@
 {"k":"{\"nodeId\":6,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true,"ts":1732270676157}
 {"k":"{\"nodeId\":6,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732270676158}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline","ts":1732270676250}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.7,"ts":1734092038649}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":32,"ts":1734092038677}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":25,"ts":1734102778598}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":29,"ts":1734102778621}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"49":[5],"90":[1],"113":[5],"$$type$$":"map"},"ts":1732270676441}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":2}","v":"Temperature Report","ts":1732270676495}
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":2}","v":{"49":[5],"$$type$$":"map"},"ts":1732270676541}
@@ -56,9 +56,9 @@
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":11}","v":[0,1],"ts":1732270677306}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":17}","v":[0],"ts":1732270677352}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":39}","v":[1],"ts":1732270677399}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":4.5,"ts":1734015612342}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":675,"ts":1734092098657}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.033,"ts":1734015612357}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":5.7,"ts":1734102778634}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":473,"ts":1734102778670}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.074,"ts":1734102778648}
 {"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1732270677661}
 {"k":"{\"nodeId\":6,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportsV1Alarm\"}","v":false,"ts":1732270677734}
 {"k":"{\"nodeId\":6,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportedNotificationTypes\"}","v":[13],"ts":1732270677735}
@@ -282,11 +282,11 @@
 {"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":11}","v":[0,1],"ts":1734091545142}
 {"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":17}","v":[0],"ts":1734091545202}
 {"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":39}","v":[1],"ts":1734091545262}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":25.8,"ts":1734092106338}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":30,"ts":1734092046887}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":7.4,"ts":1734091545466}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":400,"ts":1734091545534}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0,"ts":1734091545600}
+{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":23.4,"ts":1734102786498}
+{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":31,"ts":1734102787017}
+{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":5.4,"ts":1734102787538}
+{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":461,"ts":1734102788587}
+{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.051,"ts":1734102788063}
 {"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734091545604}
 {"k":"{\"nodeId\":10,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportsV1Alarm\"}","v":false,"ts":1734091545687}
 {"k":"{\"nodeId\":10,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportedNotificationTypes\"}","v":[13],"ts":1734091545688}
@@ -296,6 +296,36 @@
 {"k":"{\"nodeId\":10,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmType\"}","v":0,"ts":1734092047428}
 {"k":"{\"nodeId\":10,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmLevel\"}","v":0,"ts":1734092047437}
 {"k":"{\"nodeId\":10,\"commandClass\":113,\"endpoint\":0,\"property\":\"Home Health\",\"propertyKey\":\"VOC level status\"}","v":1,"ts":1734092047445}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":22.2,"ts":1734092458642}
-{"k":"{\"nodeId\":10,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":22.7,"ts":1734092586378}
-{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":22.7,"ts":1734092758650}
+{"k":"{\"nodeId\":12,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":1027,"ts":1734093779425}
+{"k":"{\"nodeId\":12,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":3,"ts":1734093779430}
+{"k":"{\"nodeId\":12,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":2,"ts":1734093779433}
+{"k":"{\"nodeId\":12,\"commandClass\":114,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093778306}
+{"k":"{\"nodeId\":12,\"commandClass\":134,\"endpoint\":0,\"property\":\"libraryType\"}","v":3,"ts":1734093785114}
+{"k":"{\"nodeId\":12,\"commandClass\":134,\"endpoint\":0,\"property\":\"protocolVersion\"}","v":"4.38","ts":1734093785116}
+{"k":"{\"nodeId\":12,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["2.23"],"ts":1734093785118}
+{"k":"{\"nodeId\":12,\"commandClass\":134,\"endpoint\":0,\"property\":\"hardwareVersion\"}","v":1,"ts":1734093785120}
+{"k":"{\"nodeId\":12,\"commandClass\":134,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093789737}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"zwavePlusVersion\"}","v":1,"ts":1734093789973}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"nodeType\"}","v":0,"ts":1734093789975}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"roleType\"}","v":5,"ts":1734093789977}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"installerIcon\"}","v":1536,"ts":1734093789978}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"userIcon\"}","v":1536,"ts":1734093789980}
+{"k":"{\"nodeId\":12,\"commandClass\":94,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093789985}
+{"k":"{\"nodeId\":12,\"commandClass\":122,\"endpoint\":0,\"property\":\"firmwareUpgradable\"}","v":true,"ts":1734093790199}
+{"k":"{\"nodeId\":12,\"commandClass\":122,\"endpoint\":0,\"property\":\"additionalFirmwareIDs\"}","v":[],"ts":1734093790201}
+{"k":"{\"nodeId\":12,\"commandClass\":122,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093790204}
+{"k":"{\"nodeId\":12,\"commandClass\":133,\"endpoint\":0,\"property\":\"groupCount\"}","v":1,"ts":1734093790426}
+{"k":"{\"nodeId\":12,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":1}","v":1,"ts":1734093790988}
+{"k":"{\"nodeId\":12,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":1}","v":[1],"ts":1734093790990}
+{"k":"{\"nodeId\":12,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true,"ts":1734093790993}
+{"k":"{\"nodeId\":12,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093790994}
+{"k":"{\"nodeId\":12,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline","ts":1734093791573}
+{"k":"{\"nodeId\":12,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"90":[1],"$$type$$":"map"},"ts":1734093791798}
+{"k":"{\"nodeId\":12,\"commandClass\":89,\"endpoint\":0,\"property\":\"hasDynamicInfo\"}","v":false,"ts":1734093792031}
+{"k":"{\"nodeId\":12,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":1}","v":{"mode":0,"profile":1,"eventCode":0},"ts":1734093792032}
+{"k":"{\"nodeId\":12,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093792036}
+{"k":"{\"nodeId\":12,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0,"ts":1734102131547}
+{"k":"{\"nodeId\":12,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093792275}
+{"k":"{\"nodeId\":12,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734093792283}
+{"k":"{\"nodeId\":12,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
+{"k":"{\"nodeId\":6,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":25.2,"ts":1734103498607}

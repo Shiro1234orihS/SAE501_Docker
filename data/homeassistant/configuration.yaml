@@ -10,13 +10,12 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 
 influxdb:
-  customize: !include customize.yaml
   api_version: 2
   host: influxdb
   port: 8086
   token: "khzRozF_2KQaxcE7b0dU0SuR17Did9cclTTvcFv6ZCLhb_IFhddl8igzCs3YGQgUQj1FNLHcwNqvAGsEvn7W_g=="
   organization: "SAE de Zinzin"
-  bucket: "SAEdeZinzin"
+  bucket: "BasesDeDonnees"
   ssl: false  # Désactive SSL
   verify_ssl: false  # Ignore la validation des certificats SSL
 

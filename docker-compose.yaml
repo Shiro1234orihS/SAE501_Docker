@@ -12,8 +12,8 @@ services:
       - ZWAVEJS_EXTERNAL_CONFIG_DIR=/usr/src/app/store # Emplacement des configs
     devices:
       - /dev/ttyUSB0:/dev/zwave # Mappe le périphérique USB pour Z-Wave
-    networks:
-      - zwave_network # Réseau partagé pour la communication
+    network_mode: host
+
 
   homeassistant:
     image: homeassistant/home-assistant:stable
@@ -73,3 +73,4 @@ services:
 networks:
   zwave_network:
     driver: bridge
+   

@@ -35050,6 +35050,19 @@
 	},
 	{
 		"manufacturerId": "0x0330",
+		"manufacturer": "HomeSys",
+		"label": "HomeMech-2002",
+		"productType": "0x0202",
+		"productId": "0xd01c",
+		"firmwareVersion": {
+			"min": "1.0",
+			"max": "3.0"
+		},
+		"filename": "0x0330/homemech-200X.json",
+		"rootDir": "/usr/src/app/store/.config-db/devices"
+	},
+	{
+		"manufacturerId": "0x0330",
 		"manufacturer": "ShenZhen Sunricher Technology, Ltd.",
 		"label": "SR-ZV9001K2-DIM",
 		"productType": "0x0300",
@@ -37948,6 +37961,58 @@
 			"max": "255.255"
 		},
 		"filename": "0x0371/zwa042.json",
+		"rootDir": "/usr/src/app/store/.config-db/devices"
+	},
+	{
+		"manufacturerId": "0x0371",
+		"manufacturer": "Aeotec Ltd.",
+		"label": "ZWA045",
+		"productType": "0x0002",
+		"productId": "0x002d",
+		"firmwareVersion": {
+			"min": "0.0",
+			"max": "255.255"
+		},
+		"filename": "0x0371/zwa045.json",
+		"rootDir": "/usr/src/app/store/.config-db/devices"
+	},
+	{
+		"manufacturerId": "0x0371",
+		"manufacturer": "Aeotec Ltd.",
+		"label": "ZWA045",
+		"productType": "0x0102",
+		"productId": "0x002d",
+		"firmwareVersion": {
+			"min": "0.0",
+			"max": "255.255"
+		},
+		"filename": "0x0371/zwa045.json",
+		"rootDir": "/usr/src/app/store/.config-db/devices"
+	},
+	{
+		"manufacturerId": "0x0371",
+		"manufacturer": "Aeotec Ltd.",
+		"label": "ZWA045",
+		"productType": "0x0202",
+		"productId": "0x002d",
+		"firmwareVersion": {
+			"min": "0.0",
+			"max": "255.255"
+		},
+		"filename": "0x0371/zwa045.json",
+		"rootDir": "/usr/src/app/store/.config-db/devices"
+	},
+	{
+		"manufacturerId": "0x0371",
+		"manufacturer": "Aeotec Ltd.",
+		"label": "ZWA045",
+		"productType": "0x0302",
+		"productId": "0x002d",
+		"firmwareVersion": {
+			"min": "0.0",
+			"max": "255.255"
+		},
+		"filename": "0x0371/zwa045.json",
 		"rootDir": "/usr/src/app/store/.config-db/devices"
 	},
 	{

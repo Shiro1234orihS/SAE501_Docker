@@ -6,19 +6,14 @@
     "auditLog": "/usr/src/app/store/logs/zwavejs_logrotate.json",
     "files": [
         {
-            "date": 1733729951148,
-            "name": "/usr/src/app/store/logs/zwavejs_2024-12-09.log",
-            "hash": "44f60bbfdb75fdc0d90b3e17648c8b74c1d91ec7e2b3b6f8dffc009978363a20"
+            "date": 1734511794249,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-12-18.log",
+            "hash": "7f2fd75aa9467177f05c2cbeb7a1babb36e75b2b2b9ff66d4bb4160bea1a522e"
         },
         {
-            "date": 1734006013656,
-            "name": "/usr/src/app/store/logs/zwavejs_2024-12-12.log",
-            "hash": "d3c7eea786890b15f850a905210caea377898684e686f6a9e61eb1d69f65756d"
-        },
-        {
-            "date": 1734090920669,
-            "name": "/usr/src/app/store/logs/zwavejs_2024-12-13.log",
-            "hash": "4deb9fc0a5e3aca4fbc467489af4966eb0d8dfd801bf533c7ebbc58a81789378"
+            "date": 1734611590559,
+            "name": "/usr/src/app/store/logs/zwavejs_2024-12-19.log",
+            "hash": "fdd9bd12f122181d399c94543e2968a6f5ed89cbdd12e2a276b6d301c52ebe70"
         }
     ],
     "hashType": "sha256"

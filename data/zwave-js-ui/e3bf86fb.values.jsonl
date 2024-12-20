@@ -1,9 +1,9 @@
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734617478841}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734617478849}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734617478855}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734617478866}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734617478873}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734617478881}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734688984607}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734688984611}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734688984614}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734688984619}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734688984623}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734688984627}
 {"k":"uuid","v":"80466ab72a9f89ac1390ac0395f1344e5c9e7870687f9a318dafa201285e2315","ts":1734515740029}
 {"k":"{\"nodeId\":17,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":1,"ts":1734523449588}
 {"k":"{\"nodeId\":17,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":5,"ts":1734523449592}
@@ -114,11 +114,11 @@
 {"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":11}","v":[0,1],"ts":1734614778433}
 {"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":17}","v":[0],"ts":1734614778500}
 {"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":39}","v":[1],"ts":1734614778579}
-{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":23.6,"ts":1734616810375}
-{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":40,"ts":1734616570422}
-{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":8.9,"ts":1734616570444}
-{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":400,"ts":1734616570500}
-{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.021,"ts":1734616570468}
+{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":25.2,"ts":1734705608194}
+{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":31,"ts":1734705608219}
+{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":7.2,"ts":1734705608242}
+{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":1520,"ts":1734705608292}
+{"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.564,"ts":1734705608266}
 {"k":"{\"nodeId\":21,\"commandClass\":49,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734614779034}
 {"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportedNotificationTypes\"}","v":[13],"ts":1734614779157}
 {"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportsV1Alarm\"}","v":false,"ts":1734614779162}
@@ -127,9 +127,9 @@
 {"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734614779395}
 {"k":"{\"nodeId\":17,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmType\"}","v":0,"ts":1734614824600}
 {"k":"{\"nodeId\":17,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmLevel\"}","v":0,"ts":1734614824607}
-{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmType\"}","v":0,"ts":1734614830392}
-{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmLevel\"}","v":0,"ts":1734614830401}
-{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"Home Health\",\"propertyKey\":\"VOC level status\"}","v":1,"ts":1734614830408}
+{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmType\"}","v":0,"ts":1734703268186}
+{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmLevel\"}","v":0,"ts":1734703268189}
+{"k":"{\"nodeId\":21,\"commandClass\":113,\"endpoint\":0,\"property\":\"Home Health\",\"propertyKey\":\"VOC level status\"}","v":2,"ts":1734703268196}
 {"k":"{\"nodeId\":22,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":1,"ts":1734614847965}
 {"k":"{\"nodeId\":22,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":5,"ts":1734614847971}
 {"k":"{\"nodeId\":22,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":328,"ts":1734614847975}
@@ -193,35 +193,36 @@
 {"k":"{\"nodeId\":22,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmType\"}","v":0,"ts":1734614901198}
 {"k":"{\"nodeId\":22,\"commandClass\":113,\"endpoint\":0,\"property\":\"alarmLevel\"}","v":0,"ts":1734614901211}
 {"k":"{\"nodeId\":22,\"commandClass\":113,\"endpoint\":0,\"property\":\"Home Health\",\"propertyKey\":\"VOC level status\"}","v":1,"ts":1734614901223}
-{"k":"{\"nodeId\":23,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":2,"ts":1734615358820}
-{"k":"{\"nodeId\":23,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":3,"ts":1734615358825}
-{"k":"{\"nodeId\":23,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":1027,"ts":1734615358831}
-{"k":"{\"nodeId\":23,\"commandClass\":114,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615358838}
-{"k":"{\"nodeId\":23,\"commandClass\":134,\"endpoint\":0,\"property\":\"hardwareVersion\"}","v":1,"ts":1734615359043}
-{"k":"{\"nodeId\":23,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["2.23"],"ts":1734615359049}
-{"k":"{\"nodeId\":23,\"commandClass\":134,\"endpoint\":0,\"property\":\"protocolVersion\"}","v":"4.38","ts":1734615359055}
-{"k":"{\"nodeId\":23,\"commandClass\":134,\"endpoint\":0,\"property\":\"libraryType\"}","v":3,"ts":1734615359060}
-{"k":"{\"nodeId\":23,\"commandClass\":134,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615359605}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"userIcon\"}","v":1536,"ts":1734615359669}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"installerIcon\"}","v":1536,"ts":1734615359671}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"roleType\"}","v":5,"ts":1734615359672}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"nodeType\"}","v":0,"ts":1734615359674}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"zwavePlusVersion\"}","v":1,"ts":1734615359675}
-{"k":"{\"nodeId\":23,\"commandClass\":94,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615359679}
-{"k":"{\"nodeId\":23,\"commandClass\":122,\"endpoint\":0,\"property\":\"additionalFirmwareIDs\"}","v":[],"ts":1734615359732}
-{"k":"{\"nodeId\":23,\"commandClass\":122,\"endpoint\":0,\"property\":\"firmwareUpgradable\"}","v":true,"ts":1734615359734}
-{"k":"{\"nodeId\":23,\"commandClass\":122,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615359739}
-{"k":"{\"nodeId\":23,\"commandClass\":133,\"endpoint\":0,\"property\":\"groupCount\"}","v":1,"ts":1734615359800}
-{"k":"{\"nodeId\":23,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":1}","v":[1],"ts":1734615359983}
-{"k":"{\"nodeId\":23,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":1}","v":1,"ts":1734615359986}
-{"k":"{\"nodeId\":23,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true,"ts":1734615359989}
-{"k":"{\"nodeId\":23,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615359991}
-{"k":"{\"nodeId\":23,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline","ts":1734615360083}
-{"k":"{\"nodeId\":23,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"90":[1],"$$type$$":"map"},"ts":1734615360270}
-{"k":"{\"nodeId\":23,\"commandClass\":89,\"endpoint\":0,\"property\":\"hasDynamicInfo\"}","v":false,"ts":1734615360465}
-{"k":"{\"nodeId\":23,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":1}","v":{"mode":0,"profile":1,"eventCode":0},"ts":1734615360470}
-{"k":"{\"nodeId\":23,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615360479}
-{"k":"{\"nodeId\":23,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0,"ts":1734615404341}
-{"k":"{\"nodeId\":23,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615360648}
-{"k":"{\"nodeId\":23,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734615360661}
-{"k":"{\"nodeId\":23,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
+{"k":"{\"nodeId\":25,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":2,"ts":1734696092162}
+{"k":"{\"nodeId\":25,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":3,"ts":1734696092166}
+{"k":"{\"nodeId\":25,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":1027,"ts":1734696092169}
+{"k":"{\"nodeId\":25,\"commandClass\":114,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696092178}
+{"k":"{\"nodeId\":25,\"commandClass\":134,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696093868}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"userIcon\"}","v":1536,"ts":1734696094027}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"installerIcon\"}","v":1536,"ts":1734696094031}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"roleType\"}","v":5,"ts":1734696094034}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"nodeType\"}","v":0,"ts":1734696094036}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"zwavePlusVersion\"}","v":1,"ts":1734696094039}
+{"k":"{\"nodeId\":25,\"commandClass\":94,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696094050}
+{"k":"{\"nodeId\":25,\"commandClass\":122,\"endpoint\":0,\"property\":\"additionalFirmwareIDs\"}","v":[],"ts":1734696094227}
+{"k":"{\"nodeId\":25,\"commandClass\":122,\"endpoint\":0,\"property\":\"firmwareUpgradable\"}","v":true,"ts":1734696094230}
+{"k":"{\"nodeId\":25,\"commandClass\":122,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696094238}
+{"k":"{\"nodeId\":25,\"commandClass\":133,\"endpoint\":0,\"property\":\"groupCount\"}","v":1,"ts":1734696094345}
+{"k":"{\"nodeId\":25,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":1}","v":[1],"ts":1734696094639}
+{"k":"{\"nodeId\":25,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":1}","v":1,"ts":1734696094643}
+{"k":"{\"nodeId\":25,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true,"ts":1734696094651}
+{"k":"{\"nodeId\":25,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696094654}
+{"k":"{\"nodeId\":25,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline","ts":1734696094768}
+{"k":"{\"nodeId\":25,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"90":[1],"$$type$$":"map"},"ts":1734696094839}
+{"k":"{\"nodeId\":25,\"commandClass\":89,\"endpoint\":0,\"property\":\"hasDynamicInfo\"}","v":false,"ts":1734696094915}
+{"k":"{\"nodeId\":25,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":1}","v":{"mode":0,"profile":1,"eventCode":0},"ts":1734696094918}
+{"k":"{\"nodeId\":25,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696094926}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0,"ts":1734706885994}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696095046}
+{"k":"{\"nodeId\":25,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1734696095058}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":255}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":1,"ts":1734706945976}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0,"ts":1734706946785}
+{"k":"{\"nodeId\":25,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0,"ts":1734706951877}

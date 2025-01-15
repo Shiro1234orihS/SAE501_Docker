@@ -42,11 +42,11 @@
       "name": "Grafana"
     },
     "build": {
-      "time": 1732219578279,
+      "time": 1736451282000,
       "repo": "https://github.com/grafana/explore-logs",
       "branch": "main",
-      "hash": "eb2effa22a252a175601aad740c37de1f3dd2515",
-      "build": 1243
+      "hash": "c93147739218ea07c34411d9fc19f462c51795c4",
+      "build": 1510
     },
     "description": "Query-less exploration of log data stored in Loki",
     "keywords": [
@@ -83,8 +83,8 @@
         "path": "img/table.png"
       }
     ],
-    "updated": "2024-11-21",
-    "version": "1.0.4"
+    "updated": "2025-01-09",
+    "version": "1.0.5"
   },
   "name": "Explore Logs",
   "preload": true,

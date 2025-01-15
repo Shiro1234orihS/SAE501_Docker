@@ -185,3 +185,12 @@
 {"k":"node.44.endpoint.0.commandClass.0x9f","v":{"isSupported":true,"isControlled":false,"secure":false,"version":0}}
 {"k":"node.44.endpoint.0.commandClass.0x6c","v":{"isSupported":true,"isControlled":false,"secure":false,"version":0}}
 {"k":"node.44.endpoint.0.commandClass.0x7a","v":{"isSupported":true,"isControlled":false,"secure":false,"version":0}}
+{"k":"node.44.isListening","v":true}
+{"k":"node.44.isFrequentListening","v":false}
+{"k":"node.44.isRouting","v":true}
+{"k":"node.44.supportedDataRates","v":[40000,100000]}
+{"k":"node.44.protocolVersion","v":3}
+{"k":"node.44.nodeType","v":"End Node"}
+{"k":"node.44.supportsSecurity","v":false}
+{"k":"node.44.supportsBeaming","v":true}
+{"k":"node.44.interviewStage","v":"ProtocolInfo"}

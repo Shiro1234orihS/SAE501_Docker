@@ -89,7 +89,7 @@
 {"k":"node.26.endpoint.0.commandClass.0x9f","v":{"isSupported":true,"isControlled":false,"secure":true,"version":1}}
 {"k":"node.26.endpoint.0.commandClass.0x6c","v":{"isSupported":true,"isControlled":false,"secure":false,"version":1}}
 {"k":"node.26.endpoint.0.commandClass.0x7a","v":{"isSupported":true,"isControlled":false,"secure":false,"version":3}}
-{"k":"node.26.lastSeen","v":1736927660833}
+{"k":"node.26.lastSeen","v":1736946980733}
 {"k":"node.26.hasSUCReturnRoute","v":true}
 {"k":"node.26.securityClasses.S2_AccessControl","v":false}
 {"k":"node.26.securityClasses.S2_Authenticated","v":false}
@@ -135,5 +135,4 @@
 {"k":"node.27.interviewStage","v":"Complete"}
 {"k":"node.27.endpoint.0.commandClass.0x20","v":{"isSupported":false,"isControlled":false,"secure":false,"version":1}}
 {"k":"node.27.deviceConfigHash","v":"44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
-{"k":"node.26.lastSeen","v":1736928380826}
-{"k":"node.26.lastSeen","v":1736928920821}
+{"k":"node.26.lastSeen","v":1736946980921}

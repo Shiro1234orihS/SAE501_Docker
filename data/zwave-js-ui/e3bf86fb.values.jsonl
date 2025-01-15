@@ -1,9 +1,9 @@
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1736927046789}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1736927046793}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1736927046796}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1736927046802}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1736927046806}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1736927046810}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1736941710703}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1736941710707}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1736941710709}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1736941710714}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1736941710718}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1736941710722}
 {"k":"uuid","v":"80466ab72a9f89ac1390ac0395f1344e5c9e7870687f9a318dafa201285e2315","ts":1734515740029}
 {"k":"{\"nodeId\":17,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":1,"ts":1734523449588}
 {"k":"{\"nodeId\":17,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":5,"ts":1734523449592}
@@ -177,11 +177,11 @@
 {"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":11}","v":[0,1],"ts":1736504097602}
 {"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":17}","v":[0],"ts":1736504097745}
 {"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"supportedScales\",\"propertyKey\":39}","v":[1],"ts":1736504097944}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":20.1,"ts":1736927240860}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":34,"ts":1736927240906}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":4.8,"ts":1736509415638}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":400,"ts":1736509415697}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.047,"ts":1736509415668}
+{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":23.4,"ts":1736946980750}
+{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Humidity\"}","v":26,"ts":1736946980865}
+{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Dew point\"}","v":2.9,"ts":1736946980889}
+{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Carbon dioxide (CO₂) level\"}","v":419,"ts":1736946980929}
+{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Volatile Organic Compound level\"}","v":0.048,"ts":1736946980908}
 {"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1736504098314}
 {"k":"{\"nodeId\":26,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportedNotificationTypes\"}","v":[13],"ts":1736504098382}
 {"k":"{\"nodeId\":26,\"commandClass\":113,\"endpoint\":0,\"property\":\"supportsV1Alarm\"}","v":false,"ts":1736504098383}
@@ -222,7 +222,3 @@
 {"k":"{\"nodeId\":27,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1736508409394}
 {"k":"{\"nodeId\":27,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true,"ts":1736508409401}
 {"k":"{\"nodeId\":27,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":20.7,"ts":1736927420852}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.2,"ts":1736927660852}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":21.7,"ts":1736928380848}
-{"k":"{\"nodeId\":26,\"commandClass\":49,\"endpoint\":0,\"property\":\"Air temperature\"}","v":22.2,"ts":1736928920831}

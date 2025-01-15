@@ -1,6 +1,6 @@
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1734515315274}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1734515315285}
-{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1734515315291}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1734515315301}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1734515315312}
-{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1734515315320}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":0,"ts":1736949225142}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":4,"ts":1736949225147}
+{"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":4,"ts":1736949225149}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["7.11"],"ts":1736949225155}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"zWaveProtocolVersion\"}","v":"7.11.0","ts":1736949225161}
+{"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"sdkVersion\"}","v":"7.11.0","ts":1736949225166}

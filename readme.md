@@ -70,3 +70,96 @@ sudo chmod 777 data/homeassistant/.storage/auth
 
 - **Vérifiez les permissions des fichiers avant d'appliquer des changements drastiques comme `chmod 777` pour des raisons de sécurité.**
 - **Utilisez `docker compose logs` pour diagnostiquer des problèmes dans les conteneurs.**
+
+# Connecter InfluxDB et Home Assistant
+
+1. **Ouvrir le fichier `data/homeassistant/configuration.yaml`**
+
+2. **Ajoutez le contenu suivant :**
+
+```yaml
+influxdb:
+  api_version: 2
+  host: influxdb
+  port: 8086
+  token: "VotreToken"
+  organization: "VotreOrganization"
+  bucket: "VotreBucket"
+  ssl: false
+  verify_ssl: false
+
+  default_measurement: value
+  include:
+    domains:
+      - sensor
+      - button
+      - light
+      - switch
+    entities:
+      - sensor.zwave_temperature
+      - sensor.zwave_humidity
+      - sensor.zwave_motion
+      - light.zwave_lampe_salon
+  exclude:
+    domains:
+      - automation
+      - script
+
+  tags_attributes:
+    - friendly_name
+    - device_id
+    - unique_id
+    - friendly_name_str
+    - area_id
+```
+
+# Déployer Docker Compose au démarrage
+
+### 1. Activer le démarrage automatique de Docker
+
+```bash
+sudo systemctl enable docker
+```
+
+### 2. Créez un nouveau fichier de service :
+
+```bash
+sudo nano /etc/systemd/system/docker-compose-app.service
+```
+
+### 3. Ajoutez le contenu suivant :
+
+```ini
+[Unit]
+Description=Docker Compose Application
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+WorkingDirectory=/home/user/mon-projet-docker
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose down
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### 4. Rechargez les services :
+
+```bash
+sudo systemctl daemon-reload
+```
+
+### 5. Activez le service :
+
+```bash
+sudo systemctl enable docker-compose-app
+```
+
+### 6. Démarrez le service :
+
+```bash
+sudo systemctl start docker-compose-app
+```
+

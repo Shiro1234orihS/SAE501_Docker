@@ -1,0 +1,42 @@
+{"k":"cacheFormat","v":1}
+{"k":"node.1.isListening","v":true}
+{"k":"node.1.isFrequentListening","v":false}
+{"k":"node.1.isRouting","v":true}
+{"k":"node.1.supportedDataRates","v":[40000,100000]}
+{"k":"node.1.protocolVersion","v":3}
+{"k":"node.1.nodeType","v":"Controller"}
+{"k":"node.1.supportsSecurity","v":false}
+{"k":"node.1.supportsBeaming","v":true}
+{"k":"node.1.deviceClass","v":{"basic":2,"generic":2,"specific":1}}
+{"k":"node.1.interviewStage","v":"Complete"}
+{"k":"node.1.deviceConfigHash","v":"44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"}
+{"k":"node.3.isListening","v":true}
+{"k":"node.3.isFrequentListening","v":false}
+{"k":"node.3.isRouting","v":true}
+{"k":"node.3.supportedDataRates","v":[40000,100000]}
+{"k":"node.3.protocolVersion","v":3}
+{"k":"node.3.nodeType","v":"End Node"}
+{"k":"node.3.supportsSecurity","v":false}
+{"k":"node.3.supportsBeaming","v":true}
+{"k":"node.3.deviceClass","v":{"basic":4,"generic":7,"specific":1}}
+{"k":"node.3.interviewStage","v":"ProtocolInfo"}
+{"k":"node.5.isListening","v":true}
+{"k":"node.5.isFrequentListening","v":false}
+{"k":"node.5.isRouting","v":true}
+{"k":"node.5.supportedDataRates","v":[40000,100000]}
+{"k":"node.5.protocolVersion","v":3}
+{"k":"node.5.nodeType","v":"End Node"}
+{"k":"node.5.supportsSecurity","v":false}
+{"k":"node.5.supportsBeaming","v":true}
+{"k":"node.5.deviceClass","v":{"basic":4,"generic":16,"specific":1}}
+{"k":"node.5.interviewStage","v":"ProtocolInfo"}
+{"k":"node.6.isListening","v":true}
+{"k":"node.6.isFrequentListening","v":false}
+{"k":"node.6.isRouting","v":true}
+{"k":"node.6.supportedDataRates","v":[40000,100000]}
+{"k":"node.6.protocolVersion","v":3}
+{"k":"node.6.nodeType","v":"End Node"}
+{"k":"node.6.supportsSecurity","v":false}
+{"k":"node.6.supportsBeaming","v":true}
+{"k":"node.6.deviceClass","v":{"basic":4,"generic":33,"specific":1}}
+{"k":"node.6.interviewStage","v":"ProtocolInfo"}

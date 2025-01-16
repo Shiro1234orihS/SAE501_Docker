@@ -5,13 +5,13 @@ services:
     container_name: zwave-js-ui
     restart: unless-stopped
     ports:
-      - "8091:8091" # Port pour accéder à l'interface Z-Wave JS UI
+      - "8091:8091" 
     volumes:
-      - ./data/zwave-js-ui:/usr/src/app/store # Persist la configuration
+      - ./data/zwave-js-ui:/usr/src/app/store 
     environment:
-      - ZWAVEJS_EXTERNAL_CONFIG_DIR=/usr/src/app/store # Emplacement des configs
+      - ZWAVEJS_EXTERNAL_CONFIG_DIR=/usr/src/app/store 
     devices:
-      - /dev/ttyUSB0:/dev/zwave # Mappe le périphérique USB pour Z-Wave
+      - /dev/ttyUSB0:/dev/zwave 
     network_mode: host
 
 
@@ -20,21 +20,21 @@ services:
     container_name: homeassistant
     restart: unless-stopped
     ports:
-      - "8123:8123" # Port pour accéder à Home Assistant
+      - "8123:8123" 
     volumes:
-      - ./data/homeassistant:/config # Persist la configuration
+      - ./data/homeassistant:/config 
     environment:
-      - TZ=Europe/Paris # Fuseau horaire
-    platform: linux/arm/v7 # Spécifie l'architecture
+      - TZ=Europe/Paris 
+    platform: linux/arm/v7 
     networks:
-      - zwave_network # Réseau partagé pour la communication
+      - zwave_network 
 
   influxdb:
     image: influxdb:latest
     container_name: influxdb
     restart: unless-stopped
     ports:
-      - "8086:8086" # Port pour accéder à InfluxDB
+      - "8086:8086" 
     environment:
       - INFLUXDB_DB=home_assistant
       - INFLUXDB_ADMIN_USER=admin
@@ -42,33 +42,33 @@ services:
     volumes:
       - ./data/influxdb:/var/lib/influxdb2
     networks:
-      - zwave_network # Réseau partagé pour la communication
+      - zwave_network 
 
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
     restart: unless-stopped
     ports:
-      - "3000:3000" # Port pour accéder à Grafana
+      - "3000:3000" 
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=123456789
     volumes:
-      - ./data/grafana:/var/lib/grafana # Persist la configuration
+      - ./data/grafana:/var/lib/grafana 
     networks:
-      - zwave_network # Réseau partagé pour la communication
+      - zwave_network 
 
   portainer:
     image: portainer/portainer-ce:latest
     container_name: portainer
     restart: unless-stopped
     ports:
-      - "9000:9000" # Port pour accéder à Portainer
+      - "9000:9000" 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data/portainer:/data # Persist la configuration
+      - ./data/portainer:/data 
     networks:
-      - zwave_network # Réseau partagé pour la communication
+      - zwave_network 
 
 networks:
   zwave_network:

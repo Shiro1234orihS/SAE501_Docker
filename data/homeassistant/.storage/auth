@@ -358,6 +358,23 @@
         "expire_at": 1744729861.083101,
         "credential_id": "1a2a5251337148238f492ca41c7830d4",
         "version": "2024.12.3"
+      },
+      {
+        "id": "85990290f81341f8a17e835b67d5f1f0",
+        "user_id": "51f694c4e12f4b2fbff06a78c5d286a6",
+        "client_id": "http://10.103.101.157:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-01-17T11:51:46.765030+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c9aaf514f50798c685ec7834ed64cbb9fd4b3678f3d94eec15a48ce514cfbf9fa46ad7e42b3cd4000bdcf0622d2ac55e7db79e86fde1508ee950ba1fadc3c7e3",
+        "jwt_key": "ed855e721e25e78d931de1956c3f10ec292b074ddf0b18996358db75f3a9460b24fb9a62ce3b271f528ef6e15e22750de708ae53512c4408c8c58fb7f1ccfcd7",
+        "last_used_at": "2025-01-17T11:51:46.765194+00:00",
+        "last_used_ip": "10.103.60.11",
+        "expire_at": 1744890706.765194,
+        "credential_id": "1a2a5251337148238f492ca41c7830d4",
+        "version": "2024.12.3"
       }
     ]
   }

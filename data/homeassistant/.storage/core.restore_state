@@ -4,104 +4,104 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.sae_de_zinzin","state":"unknown","attributes":{"editable":true,"id":"sae_de_zinzin","device_trackers":[],"user_id":"51f694c4e12f4b2fbff06a78c5d286a6","friendly_name":"SAE de Zinzin"},"last_changed":"2025-01-16T14:36:22.544419+00:00","last_reported":"2025-01-16T14:36:36.353992+00:00","last_updated":"2025-01-16T14:36:36.353992+00:00","context":{"id":"01JHQRPVM12AYM6DGB7ZYM7JBZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.sae_de_zinzin","state":"unknown","attributes":{"editable":true,"id":"sae_de_zinzin","device_trackers":[],"user_id":"51f694c4e12f4b2fbff06a78c5d286a6","friendly_name":"SAE de Zinzin"},"last_changed":"2025-01-17T14:12:47.504752+00:00","last_reported":"2025-01-17T14:12:55.177913+00:00","last_updated":"2025-01-17T14:12:55.177913+00:00","context":{"id":"01JHT9R6R9SJJP7KQ4VGKZDSVG","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.526614+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-01-16T14:36:29.899293+00:00","last_reported":"2025-01-16T14:36:29.899293+00:00","last_updated":"2025-01-16T14:36:29.899293+00:00","context":{"id":"01JHQRPNABZ8TS7MNAHAEYNHTZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-01-17T14:12:50.592132+00:00","last_reported":"2025-01-17T14:12:50.592132+00:00","last_updated":"2025-01-17T14:12:50.592132+00:00","context":{"id":"01JHT9R290Z8TS7MNAHAEYNHTZ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.526614+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-01-16T14:36:36.033378+00:00","last_reported":"2025-01-16T14:36:36.033378+00:00","last_updated":"2025-01-16T14:36:36.033378+00:00","context":{"id":"01JHQRPVA1D417XC4YJTG8QJWB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-01-17T14:12:53.552000+00:00","last_reported":"2025-01-17T14:12:53.552000+00:00","last_updated":"2025-01-17T14:12:53.552000+00:00","context":{"id":"01JHT9R55FE2KKRRK2Q78AJ4WK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.526614+00:00"
     },
     {
-      "state": {"entity_id":"button.node_26_ping","state":"unknown","attributes":{"friendly_name":"Node 26 Ping"},"last_changed":"2025-01-16T14:36:36.205998+00:00","last_reported":"2025-01-16T14:36:36.205998+00:00","last_updated":"2025-01-16T14:36:36.205998+00:00","context":{"id":"01JHQRPVFDXWJBZSXQWYX0TED2","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_26_ping","state":"unknown","attributes":{"friendly_name":"Node 26 Ping"},"last_changed":"2025-01-17T14:12:54.913006+00:00","last_reported":"2025-01-17T14:12:54.913006+00:00","last_updated":"2025-01-17T14:12:54.913006+00:00","context":{"id":"01JHT9R6G1PGJGXX3RNAG6MVAA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.395714+00:00"
     },
     {
-      "state": {"entity_id":"button.node_28_ping","state":"unknown","attributes":{"friendly_name":"Node 28 Ping"},"last_changed":"2025-01-16T14:36:36.209148+00:00","last_reported":"2025-01-16T14:36:36.209148+00:00","last_updated":"2025-01-16T14:36:36.209148+00:00","context":{"id":"01JHQRPVFHWNV245TYTTBQ0C6R","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_28_ping","state":"unknown","attributes":{"friendly_name":"Node 28 Ping"},"last_changed":"2025-01-17T14:12:54.920753+00:00","last_reported":"2025-01-17T14:12:54.920753+00:00","last_updated":"2025-01-17T14:12:54.920753+00:00","context":{"id":"01JHT9R6G8EWDJHWGYGHBGCBT8","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.396999+00:00"
     },
     {
-      "state": {"entity_id":"button.node_30_ping","state":"unknown","attributes":{"friendly_name":"Node 30 Ping"},"last_changed":"2025-01-16T14:36:36.213235+00:00","last_reported":"2025-01-16T14:36:36.213235+00:00","last_updated":"2025-01-16T14:36:36.213235+00:00","context":{"id":"01JHQRPVFNJNEQBV0F7AQJH3HE","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_30_ping","state":"unknown","attributes":{"friendly_name":"Node 30 Ping"},"last_changed":"2025-01-17T14:12:54.929548+00:00","last_reported":"2025-01-17T14:12:54.929548+00:00","last_updated":"2025-01-17T14:12:54.929548+00:00","context":{"id":"01JHT9R6GH3RZ7BZ66Q8HHC7ZY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.397448+00:00"
     },
     {
-      "state": {"entity_id":"button.node_31_ping","state":"unknown","attributes":{"friendly_name":"Node 31 Ping"},"last_changed":"2025-01-16T14:36:36.216328+00:00","last_reported":"2025-01-16T14:36:36.216328+00:00","last_updated":"2025-01-16T14:36:36.216328+00:00","context":{"id":"01JHQRPVFRTX6NY913GFHV0ED4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_31_ping","state":"unknown","attributes":{"friendly_name":"Node 31 Ping"},"last_changed":"2025-01-17T14:12:54.934627+00:00","last_reported":"2025-01-17T14:12:54.934627+00:00","last_updated":"2025-01-17T14:12:54.934627+00:00","context":{"id":"01JHT9R6GPTKVGEHECTBQHG21S","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.397717+00:00"
     },
     {
-      "state": {"entity_id":"button.node_32_ping","state":"unknown","attributes":{"friendly_name":"Node 32 Ping"},"last_changed":"2025-01-16T14:36:36.219208+00:00","last_reported":"2025-01-16T14:36:36.219208+00:00","last_updated":"2025-01-16T14:36:36.219208+00:00","context":{"id":"01JHQRPVFVK33YZF6VXF512F8Z","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_32_ping","state":"unknown","attributes":{"friendly_name":"Node 32 Ping"},"last_changed":"2025-01-17T14:12:54.943019+00:00","last_reported":"2025-01-17T14:12:54.943019+00:00","last_updated":"2025-01-17T14:12:54.943019+00:00","context":{"id":"01JHT9R6GZFG4STE1GA89E0ENY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.397907+00:00"
     },
     {
-      "state": {"entity_id":"button.node_33_ping","state":"unknown","attributes":{"friendly_name":"Node 33 Ping"},"last_changed":"2025-01-16T14:36:36.222390+00:00","last_reported":"2025-01-16T14:36:36.222390+00:00","last_updated":"2025-01-16T14:36:36.222390+00:00","context":{"id":"01JHQRPVFYD3CRFPCTK4Z5TCSA","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_33_ping","state":"unknown","attributes":{"friendly_name":"Node 33 Ping"},"last_changed":"2025-01-17T14:12:54.952792+00:00","last_reported":"2025-01-17T14:12:54.952792+00:00","last_updated":"2025-01-17T14:12:54.952792+00:00","context":{"id":"01JHT9R6H85T18F5QB00QPM3KT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398050+00:00"
     },
     {
-      "state": {"entity_id":"button.node_34_ping","state":"unknown","attributes":{"friendly_name":"Node 34 Ping"},"last_changed":"2025-01-16T14:36:36.225231+00:00","last_reported":"2025-01-16T14:36:36.225231+00:00","last_updated":"2025-01-16T14:36:36.225231+00:00","context":{"id":"01JHQRPVG18NRTNPQEYYHTV92B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_34_ping","state":"unknown","attributes":{"friendly_name":"Node 34 Ping"},"last_changed":"2025-01-17T14:12:54.963690+00:00","last_reported":"2025-01-17T14:12:54.963690+00:00","last_updated":"2025-01-17T14:12:54.963690+00:00","context":{"id":"01JHT9R6HKX5QMJGCF7JHSCSMH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398187+00:00"
     },
     {
-      "state": {"entity_id":"button.node_35_ping","state":"unknown","attributes":{"friendly_name":"Node 35 Ping"},"last_changed":"2025-01-16T14:36:36.228711+00:00","last_reported":"2025-01-16T14:36:36.228711+00:00","last_updated":"2025-01-16T14:36:36.228711+00:00","context":{"id":"01JHQRPVG447QZHR4B9ZNC23ZX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_35_ping","state":"unknown","attributes":{"friendly_name":"Node 35 Ping"},"last_changed":"2025-01-17T14:12:54.972951+00:00","last_reported":"2025-01-17T14:12:54.972951+00:00","last_updated":"2025-01-17T14:12:54.972951+00:00","context":{"id":"01JHT9R6HW1AFV802T2VHA01CN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398328+00:00"
     },
     {
-      "state": {"entity_id":"button.node_36_ping","state":"unknown","attributes":{"friendly_name":"Node 36 Ping"},"last_changed":"2025-01-16T14:36:36.231748+00:00","last_reported":"2025-01-16T14:36:36.231748+00:00","last_updated":"2025-01-16T14:36:36.231748+00:00","context":{"id":"01JHQRPVG78F5J0JC3GYJ7Y4GV","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_36_ping","state":"unknown","attributes":{"friendly_name":"Node 36 Ping"},"last_changed":"2025-01-17T14:12:54.980478+00:00","last_reported":"2025-01-17T14:12:54.980478+00:00","last_updated":"2025-01-17T14:12:54.980478+00:00","context":{"id":"01JHT9R6J4ESB8KXA0TR5NJ841","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398471+00:00"
     },
     {
-      "state": {"entity_id":"button.node_37_ping","state":"unknown","attributes":{"friendly_name":"Node 37 Ping"},"last_changed":"2025-01-16T14:36:36.234861+00:00","last_reported":"2025-01-16T14:36:36.234861+00:00","last_updated":"2025-01-16T14:36:36.234861+00:00","context":{"id":"01JHQRPVGAMPFCV28ACMK0KQNF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_37_ping","state":"unknown","attributes":{"friendly_name":"Node 37 Ping"},"last_changed":"2025-01-17T14:12:54.986062+00:00","last_reported":"2025-01-17T14:12:54.986062+00:00","last_updated":"2025-01-17T14:12:54.986062+00:00","context":{"id":"01JHT9R6JA4C9NEVYA2EBTZS8M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398613+00:00"
     },
     {
-      "state": {"entity_id":"button.node_38_ping","state":"unknown","attributes":{"friendly_name":"Node 38 Ping"},"last_changed":"2025-01-16T14:36:36.239290+00:00","last_reported":"2025-01-16T14:36:36.239290+00:00","last_updated":"2025-01-16T14:36:36.239290+00:00","context":{"id":"01JHQRPVGFS9MYQ8PYP11RTHX9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_38_ping","state":"unknown","attributes":{"friendly_name":"Node 38 Ping"},"last_changed":"2025-01-17T14:12:54.992798+00:00","last_reported":"2025-01-17T14:12:54.992798+00:00","last_updated":"2025-01-17T14:12:54.992798+00:00","context":{"id":"01JHT9R6JGXRYGYPDCE6TPNWR9","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398755+00:00"
     },
     {
-      "state": {"entity_id":"button.node_39_ping","state":"unknown","attributes":{"friendly_name":"Node 39 Ping"},"last_changed":"2025-01-16T14:36:36.242188+00:00","last_reported":"2025-01-16T14:36:36.242188+00:00","last_updated":"2025-01-16T14:36:36.242188+00:00","context":{"id":"01JHQRPVGJ1FF6CPNWX464WEWH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_39_ping","state":"unknown","attributes":{"friendly_name":"Node 39 Ping"},"last_changed":"2025-01-17T14:12:54.999398+00:00","last_reported":"2025-01-17T14:12:54.999398+00:00","last_updated":"2025-01-17T14:12:54.999398+00:00","context":{"id":"01JHT9R6JQPEH6JW9XZCCBZ8TV","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.398903+00:00"
     },
     {
-      "state": {"entity_id":"button.node_40_ping","state":"unknown","attributes":{"friendly_name":"Node 40 Ping"},"last_changed":"2025-01-16T14:36:36.245587+00:00","last_reported":"2025-01-16T14:36:36.245587+00:00","last_updated":"2025-01-16T14:36:36.245587+00:00","context":{"id":"01JHQRPVGNM8Z2QN9Y09MFAXF6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_40_ping","state":"unknown","attributes":{"friendly_name":"Node 40 Ping"},"last_changed":"2025-01-17T14:12:55.009181+00:00","last_reported":"2025-01-17T14:12:55.009181+00:00","last_updated":"2025-01-17T14:12:55.009181+00:00","context":{"id":"01JHT9R6K1C9DD7PYHPBPJZ43S","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.399093+00:00"
     },
     {
-      "state": {"entity_id":"button.node_41_ping","state":"unknown","attributes":{"friendly_name":"Node 41 Ping"},"last_changed":"2025-01-16T14:36:36.248736+00:00","last_reported":"2025-01-16T14:36:36.248736+00:00","last_updated":"2025-01-16T14:36:36.248736+00:00","context":{"id":"01JHQRPVGR1QVQHASWPC32PDPK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_41_ping","state":"unknown","attributes":{"friendly_name":"Node 41 Ping"},"last_changed":"2025-01-17T14:12:55.016952+00:00","last_reported":"2025-01-17T14:12:55.016952+00:00","last_updated":"2025-01-17T14:12:55.016952+00:00","context":{"id":"01JHT9R6K8K9GFRT6DHMPKTKGH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.399299+00:00"
     },
     {
-      "state": {"entity_id":"button.node_42_ping","state":"unknown","attributes":{"friendly_name":"Node 42 Ping"},"last_changed":"2025-01-16T14:36:36.252429+00:00","last_reported":"2025-01-16T14:36:36.252429+00:00","last_updated":"2025-01-16T14:36:36.252429+00:00","context":{"id":"01JHQRPVGW84PZH7YC5M56RE45","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_42_ping","state":"unknown","attributes":{"friendly_name":"Node 42 Ping"},"last_changed":"2025-01-17T14:12:55.022516+00:00","last_reported":"2025-01-17T14:12:55.022516+00:00","last_updated":"2025-01-17T14:12:55.022516+00:00","context":{"id":"01JHT9R6KEKZEKRWBH00EMYR2F","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.402571+00:00"
     },
     {
-      "state": {"entity_id":"button.node_43_ping","state":"unknown","attributes":{"friendly_name":"Node 43 Ping"},"last_changed":"2025-01-16T14:36:36.255875+00:00","last_reported":"2025-01-16T14:36:36.255875+00:00","last_updated":"2025-01-16T14:36:36.255875+00:00","context":{"id":"01JHQRPVGZP6VCMHFQ3A1EHDSF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_43_ping","state":"unknown","attributes":{"friendly_name":"Node 43 Ping"},"last_changed":"2025-01-17T14:12:55.029376+00:00","last_reported":"2025-01-17T14:12:55.029376+00:00","last_updated":"2025-01-17T14:12:55.029376+00:00","context":{"id":"01JHT9R6KNWCA6DPV7QN6B11R8","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.402809+00:00"
     },
     {
-      "state": {"entity_id":"button.node_44_ping","state":"unknown","attributes":{"friendly_name":"Node 44 Ping"},"last_changed":"2025-01-16T14:36:36.258747+00:00","last_reported":"2025-01-16T14:36:36.258747+00:00","last_updated":"2025-01-16T14:36:36.258747+00:00","context":{"id":"01JHQRPVH27EQQY2H5BN27Y4SH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.node_44_ping","state":"unknown","attributes":{"friendly_name":"Node 44 Ping"},"last_changed":"2025-01-17T14:12:55.040126+00:00","last_reported":"2025-01-17T14:12:55.040126+00:00","last_updated":"2025-01-17T14:12:55.040126+00:00","context":{"id":"01JHT9R6M0EZQMGKTKDVG12NFE","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-16T16:02:56.091860+00:00"
+      "last_seen": "2025-01-17T14:13:36.403020+00:00"
     },
     {
       "state": {"entity_id":"button.air_quality_sensor_ping_3","state":"unknown","attributes":{"friendly_name":"Air Quality Sensor Ping"},"last_changed":"2025-01-15T11:48:39.740229+00:00","last_reported":"2025-01-15T11:48:39.740229+00:00","last_updated":"2025-01-15T11:48:39.740229+00:00","context":{"id":"01JHMWPM5WJC17N1C0FW2738EX","parent_id":null,"user_id":null}},
@@ -124,44 +124,6 @@
         "latest_version_firmware": null
       },
       "last_seen": "2025-01-15T13:44:55.207633+00:00"
-    },
-    {
-      "state": {"entity_id":"update.lampe_2_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2.23","in_progress":false,"latest_version":"2.23","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Lampe_2 Firmware","supported_features":21},"last_changed":"2025-01-10T11:27:00.654241+00:00","last_reported":"2025-01-10T11:27:00.654241+00:00","last_updated":"2025-01-10T11:27:00.654241+00:00","context":{"id":"01JH7ZFCHEENG03CA3W1D58P6Y","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "latest_version_firmware": null
-      },
-      "last_seen": "2025-01-10T11:59:30.570764+00:00"
-    },
-    {
-      "state": {"entity_id":"button.node_25_ping","state":"unknown","attributes":{"friendly_name":"Lampe1 Ping"},"last_changed":"2025-01-10T11:11:05.266068+00:00","last_reported":"2025-01-10T11:11:05.266068+00:00","last_updated":"2025-01-10T11:11:05.266068+00:00","context":{"id":"01JH7YJ7HJS4AW261JTV5WE21A","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-01-10T11:26:38.177185+00:00"
-    },
-    {
-      "state": {"entity_id":"update.sensor2_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Sensor1 Firmware","supported_features":21},"last_changed":"2025-01-10T10:26:24.185893+00:00","last_reported":"2025-01-10T10:27:01.444918+00:00","last_updated":"2025-01-10T10:27:01.444918+00:00","context":{"id":"01JH7W1HP4X5QMJGCF7JHSCSMH","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "latest_version_firmware": null
-      },
-      "last_seen": "2025-01-10T10:27:02.844454+00:00"
-    },
-    {
-      "state": {"entity_id":"button.node_21_ping","state":"unknown","attributes":{"friendly_name":"Sensor1 Ping"},"last_changed":"2025-01-10T08:38:26.395279+00:00","last_reported":"2025-01-10T08:38:26.395279+00:00","last_updated":"2025-01-10T08:38:26.395279+00:00","context":{"id":"01JH7NTQAVBNXC3KSBH487VZ35","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-01-10T09:39:39.408101+00:00"
-    },
-    {
-      "state": {"entity_id":"update.air_quality_sensor_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.1","in_progress":false,"latest_version":"0.1","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Sensor1 Firmware","supported_features":21},"last_changed":"2025-01-10T10:14:58.634785+00:00","last_reported":"2025-01-10T10:15:24.391927+00:00","last_updated":"2025-01-10T10:15:24.391927+00:00","context":{"id":"01JH7VC8Z71PTF8R1JQ7MWNYD9","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "latest_version_firmware": null
-      },
-      "last_seen": "2025-01-10T10:15:26.147302+00:00"
-    },
-    {
-      "state": {"entity_id":"update.abus_security_center_bulb_firmware","state":"off","attributes":{"auto_update":false,"display_precision":0,"installed_version":"2.23","in_progress":false,"latest_version":"2.23","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zwave_js/icon.png","friendly_name":"Lampe_2 Firmware","supported_features":21},"last_changed":"2025-01-10T11:26:49.477289+00:00","last_reported":"2025-01-10T11:26:59.428271+00:00","last_updated":"2025-01-10T11:26:59.428271+00:00","context":{"id":"01JH7ZFBB44Q6RZ5K0Q81WT363","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "latest_version_firmware": null
-      },
-      "last_seen": "2025-01-10T11:27:00.653762+00:00"
     },
     {
       "state": {"entity_id":"button.node_3_ping","state":"unknown","attributes":{"friendly_name":"Node 3 Ping"},"last_changed":"2025-01-16T10:18:19.776976+00:00","last_reported":"2025-01-16T10:18:19.776976+00:00","last_updated":"2025-01-16T10:18:19.776976+00:00","context":{"id":"01JHQ9XY80EN2GDPVHV55R0X4P","parent_id":null,"user_id":null}},
